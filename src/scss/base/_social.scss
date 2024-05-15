@@ -23,4 +23,10 @@
 	top: remy(120);
 	right: remy(50);
 	row-gap:remy(10);
+	@media (max-width: 1439px) {
+	   right: remy(30);
+	}
+	@media (max-width: 1023px) {
+		display: none;
+	}
 }
