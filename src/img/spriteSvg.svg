@@ -1,0 +1,10 @@
+<svg style="width:0; height:0; visibility: hidden;" xmlns="http://www.w3.org/2000/svg">
+	<symbol id="caret-down"  viewbox="0 0 11 11">
+		<g>
+			
+				<path fill-rule="evenodd" fill="currentColor"
+					d="M6.393,9.841 C6.010,10.517 5.036,10.517 4.653,9.841 L0.452,2.429 C0.074,1.762 0.556,0.936 1.322,0.936 L9.725,0.936 C10.491,0.936 10.972,1.762 10.595,2.429 L6.393,9.841 Z" />
+			
+		</g>
+	</symbol>
+</svg>

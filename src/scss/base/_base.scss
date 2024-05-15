@@ -1,0 +1,127 @@
+@function remy($pxsize) {
+
+  @return calc(($pxsize/15))+rem;
+}
+:root{
+ --text: rgba(0,0,0, 1);
+ --lightText: rgba(255,254,254,1);
+ --darkBg: rgba(0, 0, 0, 1);
+ --font: 'Montserrat';
+ --fontSemi: 'Montserrat-SemiBold';
+ --fontBold: 'Montserrat-Bold';
+}
+* {
+	  box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;;
+    
+  }
+  
+  html {
+	 scroll-behavior: smooth;
+  }
+
+  html,
+  body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+  background-color: e2e2e2;
+  font-family: var(--font);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.2;
+	-webkit-font-smoothing: antialiased;
+
+  }
+  .lock {
+	overflow: hidden;
+	touch-action: none;
+	-ms-touch-action: none;
+	height: 100vh;
+  }
+  
+  a{color: inherit; display: inline-block;}
+  a,
+  a:hover {
+	text-decoration: none;
+  }
+  
+  ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+	padding: 0;
+	margin: 0;
+  }
+ 
+  img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+  object-fit: cover;
+  }
+  
+  input,
+  button, button:focus, input:focus {
+	outline: none;
+  }
+  
+  button {
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	cursor: pointer;
+  }
+input[type="submit"]{
+	padding: 0;
+	cursor:pointer;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+
+  -webkit-box-shadow: 0 0 0px 1000px #01203c inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.page-main {
+  width: min(1200px, 100%);
+  margin-inline: auto;
+}
+.container{
+  width: min(1000px, 100%);
+  margin-inline: auto;
+  
+}
+.d-flex, .d-flex-y,.d-flex-x, .d-flex-center,.d-column{
+  display: flex;
+}
+.d-flex-y,.d-flex-center{
+  align-items: center;
+}
+.d-flex-x,.d-flex-center{
+  justify-content: center;
+}
+.d-flex-column{
+  flex-direction: column;
+}
+/*========== TYPOGRAPHY ==========*/
+.h1{
+  font-size: remy(40);
+  font-family: var(--fontSemi);
+}
