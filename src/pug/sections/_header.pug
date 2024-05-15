@@ -2,9 +2,13 @@
 header.header
 	.container
 		.header-content.d-flex
+			
+			//====== logo =========
 			a(href="index.html").logo
 				img(src="./img/logo.svg", width="205" height="22" alt="logo")
 				span Производитель  шейкеров
+			
+			//====== header-models =========
 			.header-models
 				ul
 					li
@@ -12,6 +16,8 @@ header.header
 							span Наши <br> модели
 							svg.caret-down
 								use(href="./img/spriteSvg.svg#caret-down")
+			
+			//====== header-nav =========
 			.header-nav
 				ul.d-flex
 					li
@@ -24,3 +30,8 @@ header.header
 						a(href="#!")  Контакты
 			.header-contacts.d-flex
 				a(href="tel:88007707419") 8 800 770 74 19
+			
+			//====== mobile menu toggle =========
+			.header-burger
+				button#menu-toggle.menu-toggle
+					span

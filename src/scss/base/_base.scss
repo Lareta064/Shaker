@@ -100,12 +100,20 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 .page-main {
-  width: min(1200px, 100%);
+  width: min(1260px, 100%);
   margin-inline: auto;
+  padding-inline: remy(30);
+  @media (max-width: 767px) {
+      padding-inline: remy(10);
+  }
 }
 .container{
-  width: min(1000px, 100%);
+  width: min(1060px, 100%);
   margin-inline: auto;
+  padding-inline: remy(30);
+  @media (max-width: 767px) {
+      padding-inline: remy(10);
+  }
   
 }
 .d-flex, .d-flex-y,.d-flex-x, .d-flex-center,.d-column{

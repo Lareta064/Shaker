@@ -1,0 +1,67 @@
+/*========GAMBURGER======*/
+.menu-toggle {
+	display: flex;
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+	width: remy(30);
+	height: remy(30);
+	
+	flex-shrink: 0;
+}
+
+
+
+.menu-toggle span {
+	position: relative;
+	height: remy(2);
+	width: 100%;
+	border-radius: remy(3);
+	background-color: var(--lightText);
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+}
+
+.menu-toggle span:after,
+.menu-toggle span:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	height: 2px;
+	background-color: var(--lightText);
+	border-radius: 5px;
+	right: 0;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+}
+
+.menu-toggle span:after {
+	top: -8px;
+}
+
+.menu-toggle span:before {
+	bottom: -8px;
+}
+
+.active.menu-toggle span {
+	background-color: transparent !important;
+}
+
+
+.active.menu-toggle span:after {
+	top: 0px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	background-color: var(--lightText);
+}
+
+.active.menu-toggle span:before {
+	bottom: 0px;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	background-color: var(--lightText);
+}
