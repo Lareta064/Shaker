@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	/* ======  menu icon click ====== */
 	const menuToggle = document.querySelector('#menu-toggle');
-	const mobileMenu = document.querySelector('#header-menu');
+	const mobileMenu = document.querySelector('#mobile-menu');
 	const bodyEl = document.body;
 
 	if (menuToggle) {

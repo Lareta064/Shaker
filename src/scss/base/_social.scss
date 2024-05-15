@@ -1,0 +1,26 @@
+.social-block{
+	display: flex;
+	flex-wrap: wrap;
+	gap: remy(16);
+	a{
+		width: remy(40);
+		height: remy(40);
+		border-radius: 50%;
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-shrink: 0;
+		
+	}
+	
+}
+.social-block-fixed .social-block{
+	width: remy(40);
+	flex-direction: column;
+	position: absolute;
+	z-index: 5;
+	top: remy(120);
+	right: remy(50);
+	row-gap:remy(10);
+}
