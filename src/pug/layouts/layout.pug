@@ -8,9 +8,14 @@ html(lang="ru")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
 		
-		//====убрать синий цвет у ссылок в сафари ========
+		//==== убрать синий цвет у ссылок в сафари ========
 		meta(name="format-detection" content="telephone=no")
-		link(rel="stylesheet", href="css/main.css")
+		
+		//==== swiper slider ========
+		link(rel="stylesheet", href="./libs/swiper/swiper-bundle.min.css")
+		
+		//==== main.css ========
+		link(rel="stylesheet", href="./css/main.css")
 		style.
 
 			@font-face{
@@ -70,5 +75,9 @@ html(lang="ru")
 						img(src="./img/social/viber.svg", alt="viber")
 					a(href="#!").icon-tg
 						img(src="./img/social/tg.svg", alt="tg")
+		
 		//=============== мои скрипты ===================	
-		script(src="js/main.js")
+		script(src="./js/main.js")
+		
+		//=============== slider swiper ===================
+		script(src="./libs/swiper/swiper-bundle.min.js")

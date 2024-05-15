@@ -34,3 +34,37 @@
 		align-items: center;
 	}
 }
+
+.header-slider{
+	
+	
+	
+	&-item{
+		width: 100%;
+		position: relative;
+		height: 300px;
+		overflow: hidden;
+		padding-top: 70px;
+		border-radius: 10px;
+		
+		.container{
+			position: relative;
+			z-index: 2;
+		}
+	}
+	&__title{
+		max-width: 350px;
+		color: white;
+		.arrow-link{
+			color: white;
+			margin-top: 27px;
+			display: inline-block;
+		}
+	}
+	&__image{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+}

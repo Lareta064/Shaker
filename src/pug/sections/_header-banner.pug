@@ -1,0 +1,86 @@
+//========== HEADER  MAIN ===========
+.header-banner
+	//======== header title
+	.header-title
+		h1.h1 Шейкер Боттл — Производитель  шейкеров в России оптом
+	
+	//======== SHAKER MODELS ========
+	.shaker-models-wrapper.mb-20
+		.container
+			.shaker-models.d-flex
+				p.txt-bold Наши модели
+				.shaker-models__type
+					//====== single item =======
+					.shaker-models__type-item
+						.shaker-model__name
+							span Шейкер
+							span С01
+						.shaker-model__vol 600 мл
+					//====== single item =======
+					.shaker-models__type-item
+						.shaker-model__name
+							span Шейкер
+							span С02
+						.shaker-model__vol 400 мл
+					//====== single item =======
+					.shaker-models__type-item
+						.shaker-model__name
+							span Шейкер
+							span С03
+						.shaker-model__vol 600 мл
+					//====== single item =======
+					.shaker-models__type-item
+						.shaker-model__name
+							span Шейкер
+							span С04
+						.shaker-model__vol 600 мл
+
+
+	//====== HEADER SLIDER =========
+	.header-slider-wrapper
+		.header-slider.swiper
+			.swiper-wrapper
+				//======= single slide ========
+				.swiper-slide.header-slider-item
+					.container
+						//======= slide text ========
+						a(href="#!").header-slider__title
+							p.txt-25 Ищете товар для продаж на&nbsp;wildberries?
+							span.arrow-link У нас есть
+
+					//======= slide bg image ========
+					.header-slider__image
+						picture
+							source(srcset="./img/header-slider/s1-mobile.webp", media="(max-width: 767px)")
+							source(srcset="./img/header-slider/s1-desktop.webp")
+							img(srcset="./img/header-slider/s1-desktop.webp", alt="img")
+
+				//======= single slide ========
+				.swiper-slide.header-slider-item
+					.container
+						//======= slide text ========
+						a(href="#!").header-slider__title
+							p.txt-25 Ограниченная серия со скидкой
+							span.arrow-link Смотреть
+							
+					//======= slide bg image ========
+					.header-slider__image
+						picture
+							source(srcset="./img/header-slider/s2-mobile.webp", media="(max-width: 767px)")
+							source(srcset="./img/header-slider/s2-desktop.webp")
+							img(srcset="./img/header-slider/s1-desktop.webp", alt="img")
+
+				//======= single slide ========
+				.swiper-slide.header-slider-item
+					.container
+						//======= slide text ========
+						a(href="#!").header-slider__title
+							p.txt-25 Почему хороший шейкер не может стоить 60руб?
+							span.arrow-link Читать в нашем блоге
+							
+					//======= slide bg image ========
+					.header-slider__image
+						picture
+							source(srcset="./img/header-slider/s3-mobile.webp", media="(max-width: 767px)")
+							source(srcset="./img/header-slider/s3-desktop.webp")
+							img(srcset="./img/header-slider/s3-desktop.webp", alt="img")
