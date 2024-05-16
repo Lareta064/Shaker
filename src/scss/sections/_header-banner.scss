@@ -1,6 +1,29 @@
+.header-banner{
+	column-gap:20px;
+	&>*{
+		width: 100%;
+		flex-shrink: 0;
+	}
+	@media (max-width: 1023px) {
+		padding-top: 10px;
+		column-gap: 10px;
+		.shaker-models-wrapper{display: none;}
+		.header-title{
+			padding-block:25px;
+			order: 2;
+		}
+		.header-slider-wrapper{order: 1;}
+		.swiper-slide .container{padding-inline: 30px;}
+	}
+}
 .header-title{
-	padding-block: remy(45) remy(95);
-	.h1{width: min( remy(720), 80%);}
+	padding-block: 45px 95px;
+	.h1{width: min( 720px, 80%);}
+
+	@media (max-width: 767px) {
+	  padding-left: 20px;
+	  .h1 {width: min(480px, 100%);}
+	}
 }
 .shaker-models-wrapper{
 	padding-block: 20px;
@@ -37,8 +60,6 @@
 }
 
 .header-slider{
-	
-	
 	&-item{
 		width: 100%;
 		position: relative;
@@ -51,6 +72,11 @@
 			position: relative;
 			z-index: 2;
 		}
+		@media (max-width: 767px) {
+			height: 400px;
+			padding-top: 215px;
+			&__image img{min-height: unset; height: 400px;}
+		}
 	}
 	&__title{
 		max-width: 350px;
@@ -59,6 +85,9 @@
 			color: white;
 			margin-top: 27px;
 			display: inline-block;
+			@media (max-width: 767px) {
+			  margin-top: 10px;
+			}
 		}
 	}
 	&__image{
@@ -66,6 +95,9 @@
 		top: 0;
 		left: 0;
 		right: 0;
+		img{
+			min-height: 400px;
+		}
 	}
 
 	.swiper-pagination{
@@ -76,42 +108,17 @@
 		align-items: center;
 		column-gap:8px;
 		bottom: 30px;
-		&-bullet{
-			width: 10px;
-			height: 10px;
-			background-color: #fff;
-			transition: .3s;
-			opacity: 1;
-			&:hover{
-				opacity: .7;
-			}
+		@media (max-width: 1119px) {
+			padding-left: 30px;
 		}
-		&-bullet-active{
-			width: 15px;
-			height: 15px;
+		@media (max-width: 767px) {
+			padding-left: 30px;
+			bottom: 20px;
 		}
 	}
-}
-.swiper-button-next:after, .swiper-button-prev:after{
-	display: none;
-}
-.swiper-button-next, .swiper-button-prev{
-	width: 40px;
-	height: 40px;
-	border-radius: 5px;
-	background-color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: black;
-	transition: .3s; 
-	svg{
-		width: 11px;
-		height: 13px;
+
+	@media (max-width: 1199px) {
+		.swiper-button-next, .swiper-button-prev{display: none}
 		
-	}
-	&:hover{
-		background-color:black;
-		color: white;
 	}
 }
