@@ -29,4 +29,9 @@
 		
 		</g>
 	</symbol>
+	<symbol id="color-part" viewBox="0 0 100 50">
+		<g>
+			<path d="M 0 50 A 50 50 0 0 1 100 50 Z" fill="currentColor"/>
+		</g>
+	</symbol>
 </svg>

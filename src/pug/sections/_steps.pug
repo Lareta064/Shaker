@@ -6,6 +6,14 @@ mixin model-card(title, imgSrc, imgW)
 			.model-card__img
 				img(src="./img/models/c0"+imgSrc+".webp", width=""+imgW  alt="img")
 			p.title-15 Модель С0#{imgSrc} — #{title}00 мл
+
+
+mixin model-color(bgColor, svgColor)
+	label.special-label.model-color&attributes(attributes)
+		input(type="radio" name="model-color")
+		.model-color__item(style="background: "+ bgColor+ "; color:"+ svgColor+ " ;")
+			svg
+				use(href="./img/spriteSvg.svg#color-part")
 //============= Consructor steps =============
 section.constructor.white-bg.mt-20
 	.container
@@ -31,5 +39,68 @@ section.constructor.white-bg.mt-20
 							svg.angle-right
 								use(href="./img/spriteSvg.svg#angle-right")
 				//======= STEP 2 =====
-				.constructor-step.active(js-step-content)
+				.constructor-step.d-flex.active(js-step-content)
 					p.title-20 Выберите цвета деталей<br> и сделайте заказ
+					.constructor-form.d-flex
+						.constructor-form__display.d-flex-x
+							.constructor-form__images
+								img.model-base(src="./img/c01/c01_base.webp", width="270" alt="c01")
+								img.model-body(src="./img/c01/c01_body.webp", width="270" alt="c01")
+								img.model-cap(src="./img/c01/c01_cap_yellow.webp", width="270" alt="c01")
+								img.model-snap(src="./img/c01/c01_snap.webp", width="270" alt="c01")
+						
+						//====== OPTIONS ===============
+						.constructor-form__options
+							
+							//====== PART ITEMS ===============
+							.constructor-form__parts
+								//======== single item =======
+								label.model-part.special-label
+									input(type="radio" name="model-part")
+									button.btn Клапан
+							
+								//======== single item =======
+								label.model-part.special-label
+									input(type="radio" name="model-part")
+									button.btn Петля						
+								//======== single item =======
+								label.model-part.special-label
+									input(type="radio" name="model-part")
+									button.btn Крышка
+							
+								//======== single item =======
+								label.model-part.special-label
+									input(type="radio" name="model-part")
+									button.btn Стакан							
+								//======== single item =======
+								label.model-part.special-label
+									input(type="radio" name="model-part")
+									button.btn Печать на стакане
+							
+							
+							
+							.constructor-form__colors
+								+model-color('white', 'white')(class="model-color--current")
+								+model-color('#f6e13c', 'white')
+								+model-color('#f99827', 'white')
+								+model-color('#e4476a', 'white')
+								+model-color('#79cb37', 'white')
+								+model-color('#78b1e0', '#78b1e0')
+								+model-color('#fec83c', '#f6e13c')
+								+model-color('#000000', '#f6e13c')
+								+model-color('#79cb37', '#79cb37')
+								+model-color('#ea2128', '#ea2128')
+								+model-color('#653797', '#653797')
+								+model-color('#ffffff', '#000000')
+								+model-color('#78b1e0', '#000000')
+								+model-color('#f6e13c', '#000000')
+								+model-color('#f99827', '#000000')
+								+model-color('#f6e13c', 'white')
+								+model-color('#f99827', 'white')
+								+model-color('#e4476a', 'white')
+								+model-color('#79cb37', 'white')
+								+model-color('#78b1e0', '#78b1e0')
+								+model-color('#fec83c', '#f6e13c')
+								+model-color('#000000', '#f6e13c')
+								+model-color('#79cb37', '#79cb37')
+								+model-color('#ea2128', '#ea2128')
