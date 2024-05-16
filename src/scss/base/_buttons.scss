@@ -20,10 +20,11 @@
 		
 	}
 	svg{
-		width: 9px;
-		height: 13px;
+		width: 11px;
+		height: 15px;
+		flex-shrink: 0;
 		
 	}
 
 }
-.btn-slim{height: 40px;padding-inline: 20px;}
+.btn-slim{height: 40px;padding-inline: 10px;}

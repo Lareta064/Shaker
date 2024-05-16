@@ -8,7 +8,7 @@ mixin model-card(title, imgSrc, imgW, chkd)
 			span.item-info i
 			.model-card__img
 				img(src="./img/models/c0"+imgSrc+".webp", width=""+imgW  alt="img")
-			p.title-15 Модель С0#{imgSrc} — #{title}00 мл
+			p.title-15 Модель С0#{imgSrc} —&nbsp;#{title}00 мл
 
 
 mixin model-color(bgColor, svgColor, chkd)
@@ -51,7 +51,9 @@ section.constructor.white-bg.mt-20
 					.constructor-step__row.d-flex
 						p.title-20 Выберите цвета деталей<br> и сделайте заказ
 						.constructor-form.d-flex
+							//========= Images Block ========
 							.constructor-form__display.d-flex-x
+								p.step-one-result С01 <br>600 мл
 								.constructor-form__images
 									img.model-base(src="./img/c01/c01_base.webp", width="270" alt="c01")
 									img.model-body(src="./img/c01/c01_body.webp", width="270" alt="c01")
