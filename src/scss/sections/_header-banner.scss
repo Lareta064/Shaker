@@ -26,6 +26,7 @@
 		border-radius: remy(10);
 		border: 1px solid #000000;
 		width: remy(200);
+		font-family: var(--fontMedium);
 		
 	}
 	.shaker-model__name{
@@ -36,7 +37,6 @@
 }
 
 .header-slider{
-	
 	
 	
 	&-item{
@@ -66,5 +66,52 @@
 		top: 0;
 		left: 0;
 		right: 0;
+	}
+
+	.swiper-pagination{
+		left: 50%;
+		max-width: 1000px;
+		transform: translateX(-50%);
+		display: flex;
+		align-items: center;
+		column-gap:8px;
+		bottom: 30px;
+		&-bullet{
+			width: 10px;
+			height: 10px;
+			background-color: #fff;
+			transition: .3s;
+			opacity: 1;
+			&:hover{
+				opacity: .7;
+			}
+		}
+		&-bullet-active{
+			width: 15px;
+			height: 15px;
+		}
+	}
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+	display: none;
+}
+.swiper-button-next, .swiper-button-prev{
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	transition: .3s; 
+	svg{
+		width: 11px;
+		height: 13px;
+		
+	}
+	&:hover{
+		background-color:black;
+		color: white;
 	}
 }

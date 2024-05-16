@@ -38,6 +38,7 @@
 
 	//====== HEADER SLIDER =========
 	.header-slider-wrapper
+		
 		.header-slider.swiper
 			.swiper-wrapper
 				//======= single slide ========
@@ -84,3 +85,12 @@
 							source(srcset="./img/header-slider/s3-mobile.webp", media="(max-width: 767px)")
 							source(srcset="./img/header-slider/s3-desktop.webp")
 							img(srcset="./img/header-slider/s3-desktop.webp", alt="img")
+
+			button.swiper-button-next
+				svg
+					use(href="./img/spriteSvg.svg#caret-right")
+			button.swiper-button-prev
+				svg
+					use(href="./img/spriteSvg.svg#caret-left")
+			
+			.swiper-pagination

@@ -30,5 +30,21 @@ document.addEventListener("DOMContentLoaded", function () {
 			bodyEl.classList.remove('lock');
 		});
 	}
-
+	/*HEADER SLIDER */
+	var headerSwiper = new Swiper(".header-slider", {
+		autoplay:{
+			delay: 10000
+		},
+		loop: true,
+		speed: 1000,
+		effect: "fade",
+		 navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+	});
 });
