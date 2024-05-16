@@ -58,6 +58,42 @@ document.addEventListener("DOMContentLoaded", function () {
 			});
 		}
 	}
+
+		// VIDEO
+	const videoContent = document.querySelectorAll('.video-preview-item');
+	if (videoContent.length>0) {
+
+		
+		for(let clip of videoContent){
+			const videoBtn = clip.querySelector('.play-icon');
+			const videoClip = clip.querySelector('video');
+			const videoPoster = clip.querySelector('.video-poster');
+			
+
+			clip.addEventListener('click', function () {
+				if (videoClip.paused) {
+					videoClip.play();
+					videoBtn.style.opacity = "0";
+					videoPoster.style.opacity = "0";
+					
+				} else {
+					videoClip.pause();
+					videoBtn.style.opacity = "1";
+					videoPoster.style.opacity = "1";
+					
+				}
+				//videoClip.play();
+			});
+			clip.addEventListener("ended", function () {
+				videoClip.pause();
+				videoBtn.style.opacity = "1";
+				videoPoster.style.opacity = "1";
+				
+			});
+		}
+	}
+
+
 });
 
 /* ===== constructor steps ======= */

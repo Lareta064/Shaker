@@ -1,0 +1,26 @@
+section.video-preview.mt-30
+	
+	.video-preview-wrapper
+		//===== video item =====
+		.video-preview-item
+			//===== play btm =====
+			button.play-icon
+				svg.svg-play
+					use(href="./img/spriteSvg.svg#svg-play")
+			.video-poster
+				img(src="./img/video-posters/poster1.webp", alt="poster")
+			//====video =======
+			video(width="100%", height="100%" )
+				source(src="video/video.mp4" type="video/mp4" )
+		
+		//===== video item =====
+		.video-preview-item
+			//===== play btm =====
+			button.play-icon
+				svg.svg-play
+					use(href="./img/spriteSvg.svg#svg-play")
+			.video-poster
+				img(src="./img/video-posters/poster2.webp", alt="poster")
+			//====video =======
+			video(src="video/video.mp4", width="100%", height="100%", )
+				source(src="video.mp4" type="video/mp4")
