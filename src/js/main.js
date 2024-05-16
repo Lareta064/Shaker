@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	/*HEADER SLIDER */
 	var headerSwiper = new Swiper(".header-slider", {
 		autoplay:{
-			delay: 10000
+			delay: 5000
 		},
 		loop: true,
 		speed: 1000,
@@ -48,7 +48,44 @@ document.addEventListener("DOMContentLoaded", function () {
 		},
 	});
 	
-	/****круг с цветом в конструкторе. По клику для родительского label добавить класс***** */
+	/*REVIEW SLIDER*/
+	var reviewSwiper = new Swiper(".review-slider", {
+		slidesPerView: 1,
+        spaceBetween: 20,
+		// autoplay:{
+		// 	delay: 5000
+		// },
+		loop: true,
+		speed: 1000,
+		autoHeight: true,
+		 navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			 type: "fraction",
+		},
+		breakpoints: {
+		// when window width is >= 320px
+			599: {
+				slidesPerView: 1.2,
+				spaceBetween: 20
+			},
+			
+			768: {
+				slidesPerView: 1.7,
+				spaceBetween: 20
+			},
+			1024: {
+				slidesPerView: 2,
+				spaceBetween: 20
+			},
+		}
+	});
+ 	
+	
+	/*круг с цветом в конструкторе*/
 	const colorPalette = document.querySelectorAll('.model-color');
 	if(colorPalette.length > 0){
 		for(let item of colorPalette){
@@ -59,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 
-		// VIDEO
+	// VIDEO
 	const videoContent = document.querySelectorAll('.video-preview-item');
 	if (videoContent.length>0) {
 
