@@ -47,4 +47,17 @@ document.addEventListener("DOMContentLoaded", function () {
 			clickable: true,
 		},
 	});
+	
+	
 });
+
+/* ===== constructor steps ======= */
+function viewConsructorNextStep(){
+	const constructorStepTitles = document.querySelectorAll('[js-step-title]');
+	const constructorStepContents = document.querySelectorAll('[js-step-content]');
+	
+	constructorStepTitles[0].classList.remove('active');
+	constructorStepContents[0].classList.remove('active');
+	constructorStepTitles[1].classList.add('active');
+	constructorStepContents[1].classList.add('active');	
+}

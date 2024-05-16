@@ -1,0 +1,58 @@
+.constructor-step {
+	display: none;
+
+	&.active {
+		display: block;
+	}
+}
+.constructor{
+	padding-block: 30px;
+}
+.constructor-header{
+	
+	column-gap: 25px;
+	margin-bottom: 16px;
+	.title-25{opacity: 0.3; transition: .3s; }
+	.title-25.active {opacity: 1;}
+	
+}
+.constructor-step{
+	.title-20{margin-bottom: 15px;}
+}
+.constructor-step__button{
+	display: flex;
+	justify-content: flex-end;
+}
+.constructor-step__cards{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap:10px;
+}
+.model-card{
+	position: relative;
+	width: min(240px, 100%);
+	background-color: #fff;
+	border: 1px solid black;
+	padding: 10px;
+	border-radius: 5px;
+	transition: .3s;
+	.item-info{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		z-index: 2;
+	}
+	&__img{
+		height: 250px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+	&:hover{
+		background-color: rgba(226, 226, 226, 0.5);
+	}
+}
+.model-card-label input:checked + .model-card{
+	background-color: rgb(226, 226, 226);
+}

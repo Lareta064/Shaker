@@ -1,0 +1,35 @@
+mixin model-card(title, imgSrc, imgW)
+	label.model-card-label.special-label
+		input(type="radio" name="shaker-model")
+		.model-card
+			span.item-info i
+			.model-card__img
+				img(src="./img/models/c0"+imgSrc+".webp", width=""+imgW  alt="img")
+			p.title-15 Модель С0#{imgSrc} — #{title}00 мл
+//============= Consructor steps =============
+section.constructor.white-bg.mt-20
+	.container
+		#constructor-block
+			.constructor-header.d-flex-y
+				h3.title-25.active(js-step-title) Шаг 1
+				h3.title-25(js-step-title) Шаг 2
+				
+			//======= STEPS CONTENT =====
+			.constructor-body
+				//======= STEP 1 =====
+				.constructor-step(js-step-content)
+					p.title-20 Выберите модель
+					.constructor-step__cards
+						+model-card(6, 1, 92)
+						+model-card(4, 2, 87)
+						+model-card(6, 3, 92)
+						+model-card(4, 4, 87)
+					
+					.constructor-step__button.mt-20
+						button.btn(type="button" onclick="viewConsructorNextStep()")
+							span Выбрать цвет
+							svg.angle-right
+								use(href="./img/spriteSvg.svg#angle-right")
+				//======= STEP 2 =====
+				.constructor-step.active(js-step-content)
+					p.title-20 Выберите цвета деталей<br> и сделайте заказ

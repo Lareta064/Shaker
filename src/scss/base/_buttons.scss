@@ -1,0 +1,28 @@
+.btn{
+	display:flex;
+	width: fit-content;
+	justify-content: center;
+	align-items: center;
+	gap:16px;
+	color: var(--text);
+	padding-inline: 40px;
+	height: 50px;
+	background-color: #fff;
+	border-radius: 5px;
+	border: 1px solid var(--text);
+	font-size: 15px;
+	font-family: var(--fontMedium);
+	font-weight: 500;
+	transition: .3s; 
+	&:hover{
+		background-color: var(--darkBg);
+		color: white;
+		
+	}
+	svg{
+		width: 9px;
+		height: 13px;
+		
+	}
+
+}

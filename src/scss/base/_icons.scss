@@ -22,3 +22,19 @@
 	}
 
 }
+.item-info{
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	display: inline-block;
+	border: 2px solid black;
+	line-height: 20px;
+	text-align: center;
+	font-size: 16px;
+	font-family: var(--fontMedium);
+	font-weight: 500;
+	cursor:pointer;
+	&:hover{
+		background-color: lightgray;
+	}
+}
