@@ -1,4 +1,4 @@
-.btn{
+.btn, .btn-slim{
 	display:flex;
 	width: fit-content;
 	justify-content: center;
@@ -26,3 +26,4 @@
 	}
 
 }
+.btn-slim{height: 40px;padding-inline: 20px;}

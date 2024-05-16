@@ -48,16 +48,33 @@ document.addEventListener("DOMContentLoaded", function () {
 		},
 	});
 	
-	
+	/****круг с цветом в конструкторе. По клику для родительского label добавить класс***** */
+	const colorPalette = document.querySelectorAll('.model-color');
+	if(colorPalette.length > 0){
+		for(let item of colorPalette){
+			item.addEventListener('click', ()=>{
+				document.querySelector('.model-color--current').classList.remove('model-color--current');
+				item.classList.add('model-color--current');
+			});
+		}
+	}
 });
 
 /* ===== constructor steps ======= */
-function viewConsructorNextStep(){
 	const constructorStepTitles = document.querySelectorAll('[js-step-title]');
 	const constructorStepContents = document.querySelectorAll('[js-step-content]');
+function viewConsructorNextStep(){
+
 	
 	constructorStepTitles[0].classList.remove('active');
 	constructorStepContents[0].classList.remove('active');
 	constructorStepTitles[1].classList.add('active');
 	constructorStepContents[1].classList.add('active');	
+}
+function viewConsructorPrevStep(){
+	
+	constructorStepTitles[0].classList.add('active');
+	constructorStepContents[0].classList.add('active');
+	constructorStepTitles[1].classList.remove('active');
+	constructorStepContents[1].classList.remove('active');	
 }

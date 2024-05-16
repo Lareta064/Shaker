@@ -173,6 +173,9 @@ select:-webkit-autofill:focus {
 .title-15{
   font-size: 15px;
 }
+.txt-bold{
+  font-family: var(--fontBold);
+}
 .contact-link {
   font-size: 20px;
 }
@@ -190,5 +193,10 @@ select:-webkit-autofill:focus {
   border-radius: 20px;
   @media (max-width: 767px) {
     border-radius: 10px;
+  }
+}
+@keyframes slowOpacity{
+  to{
+    opacity: 1;
   }
 }
