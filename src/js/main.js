@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		// },
 		loop: true,
 		speed: 1000,
-		autoHeight: true,
+		// autoHeight: true,
 		 navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
