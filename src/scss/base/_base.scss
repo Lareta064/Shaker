@@ -205,6 +205,12 @@ select:-webkit-autofill:focus {
 .mt-30 {
   margin-top: 30px;
 }
+.mt-50 {
+  margin-top: 50px;
+  @media (max-width: 767px) {
+  margin-top: 30px;
+  }
+}
 .mt-auto{margin-top: auto;}
 .white-bg{
   background-color: white;

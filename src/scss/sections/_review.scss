@@ -24,7 +24,11 @@
 	    .swiper-button-prev {left: 38%;}
 		.swiper-button-next {right: 38%;}
 	}
+	@media (max-width: 1023px) {
+		width: calc(50% + 50vw);
+	}
 	@media (max-width: 767px) {
+		width: 100%;
 	.swiper-button-prev {
 			left: 20%;
 		}

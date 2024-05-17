@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-
+	$('.lazy').Lazy();
 	/* ======  menu icon click ====== */
 	const menuToggle = document.querySelector('#menu-toggle');
 	const mobileMenu = document.querySelector('#mobile-menu');
@@ -129,7 +129,18 @@ document.addEventListener("DOMContentLoaded", function () {
 			});
 		}
 	}
-
+	
+	/* ==== Fancybox ===== */
+	Fancybox.bind('[data-fancybox]', {
+		 Thumbs: false,
+		 Toolbar: {
+			display: {
+			left: [],
+			middle: [],
+			right: [ "close"],
+			},
+		},
+	});
 
 });
 

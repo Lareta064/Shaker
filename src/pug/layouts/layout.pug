@@ -10,7 +10,8 @@ html(lang="ru")
 		
 		//==== убрать синий цвет у ссылок в сафари ========
 		meta(name="format-detection" content="telephone=no")
-		
+		//======= галерея lightbox =============
+		link(rel="stylesheet" href="./libs/fancybox/fancybox.css" )
 		//==== swiper slider ========
 		link(rel="stylesheet", href="./libs/swiper/swiper-bundle.min.css")
 		
@@ -83,8 +84,15 @@ html(lang="ru")
 					a(href="#!").icon-tg
 						img(src="./img/social/tg.svg", alt="tg")
 		
-		//=============== мои скрипты ===================	
-		script(src="./js/main.js")
 		
 		//=============== slider swiper ===================
 		script(src="./libs/swiper/swiper-bundle.min.js")
+		//=============== jquery ===================
+		script(src="./libs/jquery/jquery-3.0.0.min.js")
+		//=============== lightbox ===================
+		script(src="./libs/fancybox/fancybox.js")
+		//=============== lazy load ===================
+		script(src="./libs/jquery.lazy.min.js")
+		//=============== мои скрипты ===================	
+		script(src="./js/main.js")
+		

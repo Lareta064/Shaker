@@ -1,0 +1,18 @@
+mixin galleryFoto(arg)
+	- var n=1
+	- var k=1
+	while n < arg && k < arg
+		a(href="./img/portfolio/photo"+ n++ +".webp" data-fancybox ="our-works").portfolio-item
+			img.lazy(src="./img/portfolio/photo"+ k++ +".webp", alt="")
+
+//========= PORTFOLIO ============
+section.portfolio.white-bg.mt-50
+	.portfolio__header.d-flex-y
+		h2.title-25 Наши работы
+		button.icon-table
+			svg
+				use( href='./img/spriteSvg.svg#svg-table')
+	
+	//======= PORTFOLIO WRAPPER =========
+	.portfolio-wrapper
+		+galleryFoto(9)
