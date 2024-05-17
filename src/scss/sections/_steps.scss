@@ -1,4 +1,4 @@
-.constructor-frame[js-step-content]{
+*[js-step-content]{
 	display: none;
 	opacity:0;
 	&.active {
@@ -10,69 +10,23 @@
 		animation-delay: .2s;
 	}
 }
-.constructor-frame {
+// .constructor-frame {
 	
 	
-	&__row.d-flex{
-		&>.title-20{flex-shrink: 0;}
-		@media (max-width: 1023px) {
-			flex-direction: column;
+// 	&__row.d-flex{
+// 		&>.title-20{flex-shrink: 0;}
+// 		@media (max-width: 1023px) {
+// 			flex-direction: column;
 			
-		}
-	}
+// 		}
+// 	}
 	
 	
-}
-.constructor-form.d-flex {
-	flex-grow: 1;
-	padding-left: 70px;
-	margin-top: -30px;
+// }
 
-	@media (max-width: 1199px) {
-		padding-left: 40px;
-	}
 
-	@media (max-width: 1023px) {
-		flex-direction: column;
-		margin-top: 0;
-
-		#output-color {
-			display: none;
-		}
-	}
-
-	@media (max-width: 767px) {
-		padding-left: 0;
-
-	}
-}
-.constructor-form__display {
-	flex-grow: 1;
-}
-
-.constructor-form__options {
-	width: 325px;
-	flex-shrink: 0;
-
-	@media (max-width: 1023px) {
-		width: 100%;
-		display: flex;
-		flex-direction: row-reverse;
-		align-items: flex-start;
-		column-gap: 30px;
-		margin-top: 30px;
-	}
-
-	@media (max-width: 767px) {
-		flex-direction: column-reverse;
-		padding-top: 10px;
-		padding-bottom: 15px;
-		border-top: 1px solid #b1b1b1;
-		border-bottom: 1px solid #b1b1b1;
-	}
-}
 .constructor{
-	padding-block: 30px;
+	padding-block: 29px;
 	@media (max-width: 767px) {
 		padding-block: 20px;
 		border-radius: 0;
@@ -84,7 +38,7 @@
 .constructor-header{
 	
 	column-gap: 25px;
-	margin-bottom: 14px;
+	margin-bottom: 6px;
 	.title-25{opacity: 0.3; transition: .3s; }
 	.title-25.active {opacity: 1;}
 	
@@ -110,17 +64,17 @@
 
 .constructor-form__display{
 	position: relative;
-	
-	.current-model-name{
-		display: none;
-		font-family: var(--fontMedium);
-		font-weight: 500;
-		@media (max-width: 767px) {
+}
+.current-model-name {
+	display: none;
+	font-family: var(--fontMedium);
+	font-weight: 500;
+
+	@media (max-width: 767px) {
 		display: block;
 		position: absolute;
 		bottom: -14px;
 		left: 0;
-		}
 	}
 }
 .constructor-form__images{

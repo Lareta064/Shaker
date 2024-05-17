@@ -1,0 +1,141 @@
+mixin model-card(title, imgSrc, imgW, chkd)
+	label.model-card-label.special-label
+		if chkd
+			input(type="radio" name="shaker-model" checked)
+		else
+			input(type="radio" name="shaker-model")
+		.model-card
+			span.item-info i
+			.model-card__img
+				img(src="./img/models/c0"+imgSrc+".webp", width=""+imgW  alt="img")
+			p.title-15 Модель С0#{imgSrc} —&nbsp;#{title}00 мл
+
+
+mixin model-color(bgColor, svgColor, chkd)
+	//======== один элемент =========
+	label.special-label.model-color&attributes(attributes)
+		if chkd
+			input(type="radio" name="model-color" checked)
+		else
+			input(type="radio" name="model-color")
+		//===== цвет, прописанный в background- левая половинка круга, а цвет, прописанный в color- правая половинка круга
+		.model-color__item(style="background: "+ bgColor+ "; color:"+ svgColor+ " ;")
+			svg
+				use(href="./img/spriteSvg.svg#color-part")
+//============= Consructor steps =============
+section.constructor.white-bg.mt-30
+	.container
+		//====== SECTION TITLE =======
+		.constructor-header.d-flex-y
+			h3.title-25.active(js-step-title) Шаг 1
+			h3.title-25(js-step-title) Шаг 2
+			
+			
+		//======= STEP 1 =====
+		.constructor-models(js-step-content)
+			p.title-20.mb-20 Выберите модель
+			.models-cards
+				+model-card(6, 1, 92, 'chkd')
+				+model-card(4, 2, 87)
+				+model-card(6, 3, 92)
+				+model-card(4, 4, 87)
+			
+			.constructor-frame__button.mt-20
+				button.btn(type="button" onclick="viewConsructorNextStep()")
+					span Выбрать цвет
+					svg.angle-right
+						use(href="./img/spriteSvg.svg#angle-right")
+		//======= STEP 2 =====
+		.constructor-display.active(js-step-content)
+			//=======LEFT COLUMN ======
+			.constructor-column-left
+				p.title-20 Выберите цвета деталей<br> и сделайте заказ
+			
+			
+			//======= CENTER COLUMN ======
+			.constructor-column-center
+				//========= Images Block ========
+				.constructor-form__images
+					img.model-base(src="./img/c01/c01_base.webp", width="270" alt="c01")
+					img.model-body(src="./img/c01/c01_body.webp", width="270" alt="c01")
+					img.model-cap(src="./img/c01/c01_cap_yellow.webp", width="270" alt="c01")
+					img.model-snap(src="./img/c01/c01_snap.webp", width="270" alt="c01")
+				
+				//======= current model name (visible in mob version) =====
+				p.current-model-name С01 <br>600 мл
+			
+			//======= Right COLUMN ======
+			.constructor-column-right
+				//====== PART ITEMS ===============
+				.model-parts
+					//======== single item =======
+					label.model-part.special-label
+						input(type="radio" name="model-part" checked)
+						span.btn-slim Клапан
+				
+					//======== single item =======
+					label.model-part.special-label
+						input(type="radio" name="model-part")
+						span.btn-slim Петля						
+					//======== single item =======
+					label.model-part.special-label
+						input(type="radio" name="model-part")
+						span.btn-slim Крышка
+				
+					//======== single item =======
+					label.model-part.special-label
+						input(type="radio" name="model-part")
+						span.btn-slim Стакан							
+					//======== single item =======
+					label.model-part.special-label
+						input(type="radio" name="model-part")
+						button.btn-slim Печать на стакане
+				
+				//==========COLOR PALETTE =======
+				.colors-palette-block
+					//======== Выбранные цвета =====
+					p.txt-bold#output-color
+						span.color-first Белый
+						span -
+						span.color-second Белый
+					
+					//======== Палитра цветов =====
+					.colors-palette
+						+model-color('white', 'white', 'chkd')(class="model-color--current")
+						+model-color('#f6e13c', 'white')
+						+model-color('#f99827', 'white')
+						+model-color('#e4476a', 'white')
+						+model-color('#79cb37', 'white')
+						+model-color('#78b1e0', '#78b1e0')
+						+model-color('#fec83c', '#f6e13c')
+						+model-color('#000000', '#f6e13c')
+						+model-color('#79cb37', '#79cb37')
+						+model-color('#ea2128', '#ea2128')
+						+model-color('#653797', '#653797')
+						+model-color('#ffffff', '#000000')
+						+model-color('#78b1e0', '#000000')
+						+model-color('#f6e13c', '#000000')
+						+model-color('#f99827', '#000000')
+						+model-color('#f6e13c', 'white')
+						+model-color('#f99827', 'white')
+						+model-color('#e4476a', 'white')
+						+model-color('#79cb37', 'white')
+						+model-color('#78b1e0', '#78b1e0')
+						+model-color('#fec83c', '#f6e13c')
+						+model-color('#000000', '#f6e13c')
+						+model-color('#79cb37', '#79cb37')
+						+model-color('#ea2128', '#ea2128')
+
+	
+			//====== buttons block =======
+			.constructor-buttons.d-flex-y
+				button.btn(type="button" onclick="viewConsructorPrevStep()")
+					svg.angle-left
+						use(href="./img/spriteSvg.svg#angle-right")
+					span Выбрать модель
+					
+
+				a(href="#order-form").btn
+					span Заказать
+					svg.angle-right
+						use(href="./img/spriteSvg.svg#angle-right")
