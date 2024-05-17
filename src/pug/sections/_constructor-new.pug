@@ -8,7 +8,7 @@ mixin model-card(title, imgSrc, imgW, chkd)
 			span.item-info i
 			.model-card__img
 				img(src="./img/models/c0"+imgSrc+".webp", width=""+imgW  alt="img")
-			p.title-15 Модель С0#{imgSrc} —&nbsp;#{title}00 мл
+			p.title-15 Модель С0#{imgSrc} —&nbsp;#{title}00&nbsp;мл
 
 
 mixin model-color(bgColor, svgColor, chkd)
@@ -27,8 +27,8 @@ section.constructor.white-bg.mt-30
 	.container
 		//====== SECTION TITLE =======
 		.constructor-header.d-flex-y
-			h3.title-25.active(js-step-title) Шаг 1
-			h3.title-25(js-step-title) Шаг 2
+			h3.title-25.active(js-step-title) Шаг 01
+			h3.title-25(js-step-title) Шаг 02
 			
 			
 		//======= STEP 1 =====
@@ -55,7 +55,7 @@ section.constructor.white-bg.mt-30
 			//======= CENTER COLUMN ======
 			.constructor-column-center
 				//========= Images Block ========
-				.constructor-form__images
+				.constructor-images
 					img.model-base(src="./img/c01/c01_base.webp", width="270" alt="c01")
 					img.model-body(src="./img/c01/c01_body.webp", width="270" alt="c01")
 					img.model-cap(src="./img/c01/c01_cap_yellow.webp", width="270" alt="c01")
@@ -100,31 +100,32 @@ section.constructor.white-bg.mt-30
 						span.color-second Белый
 					
 					//======== Палитра цветов =====
-					.colors-palette
-						+model-color('white', 'white', 'chkd')(class="model-color--current")
-						+model-color('#f6e13c', 'white')
-						+model-color('#f99827', 'white')
-						+model-color('#e4476a', 'white')
-						+model-color('#79cb37', 'white')
-						+model-color('#78b1e0', '#78b1e0')
-						+model-color('#fec83c', '#f6e13c')
-						+model-color('#000000', '#f6e13c')
-						+model-color('#79cb37', '#79cb37')
-						+model-color('#ea2128', '#ea2128')
-						+model-color('#653797', '#653797')
-						+model-color('#ffffff', '#000000')
-						+model-color('#78b1e0', '#000000')
-						+model-color('#f6e13c', '#000000')
-						+model-color('#f99827', '#000000')
-						+model-color('#f6e13c', 'white')
-						+model-color('#f99827', 'white')
-						+model-color('#e4476a', 'white')
-						+model-color('#79cb37', 'white')
-						+model-color('#78b1e0', '#78b1e0')
-						+model-color('#fec83c', '#f6e13c')
-						+model-color('#000000', '#f6e13c')
-						+model-color('#79cb37', '#79cb37')
-						+model-color('#ea2128', '#ea2128')
+					.scroll-horizontal
+						.colors-palette
+							+model-color('white', 'white', 'chkd')(class="model-color--current")
+							+model-color('#f6e13c', 'white')
+							+model-color('#f99827', 'white')
+							+model-color('#e4476a', 'white')
+							+model-color('#79cb37', 'white')
+							+model-color('#78b1e0', '#78b1e0')
+							+model-color('#fec83c', '#f6e13c')
+							+model-color('#000000', '#f6e13c')
+							+model-color('#79cb37', '#79cb37')
+							+model-color('#ea2128', '#ea2128')
+							+model-color('#653797', '#653797')
+							+model-color('#ffffff', '#000000')
+							+model-color('#78b1e0', '#000000')
+							+model-color('#f6e13c', '#000000')
+							+model-color('#f99827', '#000000')
+							+model-color('#f6e13c', 'white')
+							+model-color('#f99827', 'white')
+							+model-color('#e4476a', 'white')
+							+model-color('#79cb37', 'white')
+							+model-color('#78b1e0', '#78b1e0')
+							+model-color('#fec83c', '#f6e13c')
+							+model-color('#000000', '#f6e13c')
+							+model-color('#79cb37', '#79cb37')
+							+model-color('#ea2128', '#ea2128')
 
 	
 			//====== buttons block =======

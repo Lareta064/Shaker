@@ -1,8 +1,20 @@
 .constructor{
 	height: 500px;
+	padding-block: 29px;
 	&-column{
 		width: 340px;
 		flex-shrink: 0;
+	}
+	@media (max-width: 1023px) {
+	height: auto;
+	min-height: 430px;
+	}
+	@media (max-width: 767px) {
+		padding-block: 20px;
+		border-radius: 0;
+		margin-left: -10px;
+		margin-right: -10px;
+		padding-inline: 10px;
 	}
 }
 .constructor.constructor-minimize{
@@ -17,6 +29,9 @@
 	position: relative;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	@media (max-width: 767px) {
+		display: block;
+	}
 }
 .constructor-buttons {
 	justify-content: space-between;
@@ -27,10 +42,12 @@
 	bottom: 0;
 
 	@media (max-width: 1023px) {
-		margin-top: 30px;
+		bottom: -30px;
 	}
 
 	@media (max-width: 767px) {
+		position: relative;
+		bottom: auto;
 		margin-top: 20px;
 		justify-content: center;
 		column-gap: 30px;
@@ -42,6 +59,36 @@
 }
 .constructor-column-center,.constructor-column-right{
 	margin-top: -30px;
+	position: relative;
+	padding-block: 20px;
+	@media (max-width: 767px) {
+	margin-top: 0;
+	}
+}
+.constructor-column-center{
+	@media (max-width: 767px) {
+		    
+			padding-bottom: 30px;
+		}
+}
+.constructor-column-right{
+	@media (max-width: 767px) {
+		display: flex;
+		flex-direction: column-reverse;
+		&>*{width: 100%;}
+		padding-top: 5px;
+		&:after, &:before{
+			content: '';
+			position: absolute;
+			left: -20px;
+			right: -20px;
+			height: 1px;
+			background-color: #b1b1b1;
+		}
+		&:after{top: 0;}
+		&:before{bottom: 0;}
+		
+	}
 }
 @media (max-width: 1023px) {
 	
