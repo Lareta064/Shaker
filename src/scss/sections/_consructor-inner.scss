@@ -137,20 +137,7 @@
 	}
 }
 
-.scroll-horizontal {
 
-	@media (max-width: 767px) {
-		overflow: hidden;
-		width: calc(50% + 50vw) !important;
-		overflow-x: auto;
-		scrollbar-width: none;
-
-		&::-webkit-scrollbar {
-			display: none;
-		}
-
-	}
-}
 
 .colors-palette-block {
 	.txt-bold {

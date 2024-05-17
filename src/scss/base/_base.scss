@@ -227,6 +227,29 @@ select:-webkit-autofill:focus {
     padding-bottom: 25px;
   }
 }
+.img-zoom{
+  overflow: hidden;
+  img{
+    transition: .5s; 
+  }
+  &:hover img{
+    transform: scale(1.15);
+  }
+}
+.scroll-horizontal {
+
+  @media (max-width: 767px) {
+    overflow: hidden;
+    width: calc(50% + 50vw - 10px) !important;
+    overflow-x: auto;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+  }
+}
 @keyframes slowOpacity{
   to{
     opacity: 1;
