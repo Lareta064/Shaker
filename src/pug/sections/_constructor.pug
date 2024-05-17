@@ -11,7 +11,18 @@ mixin model-card(title, imgSrc, imgW, chkd)
 				img(src="./img/models/c0"+imgSrc+".webp", width=""+imgW  alt="img")
 			p.title-15 Модель С0#{imgSrc} —&nbsp;#{title}00 мл
 
-
+mixin model-card-mini(title, imgSrc, imgW, chkd)
+	//======= single model =======
+	label.model-card-label.special-label
+		if chkd
+			input(type="radio" name="shaker-model-mini" checked)
+		else
+			input(type="radio" name="shaker-model-mini")
+		.model-card.model-card--mini
+			span.item-info i
+			.model-card__img
+				img(src="./img/models/c0"+imgSrc+".webp", width=""+imgW  alt="img")
+			p.title-15 С0#{imgSrc} —&nbsp;#{title}00 мл
 mixin model-color(bgColor, svgColor, chkd)
 	//======== один элемент =========
 	label.special-label.model-color&attributes(attributes)
@@ -26,17 +37,16 @@ mixin model-color(bgColor, svgColor, chkd)
 //============= Consructor steps =============
 section.constructor.white-bg.mt-30
 	.container
-		#constructor-block.constructor-block.d-flex
-			
+		.constructor-block.d-flex
 			//======= левая колонка =====
 			.constructor-column
-				p.title-20 Выберите модель
+				p.title-20.mb-20 Собрать свой шейкер
 				//=======  MODELS CARDS =======
-				.models-cards
-					+model-card(6, 1, 92, 'chkd')
-					+model-card(4, 2, 87)
-					+model-card(6, 3, 92)
-					+model-card(4, 4, 87)
+				.models-cards.models-cards--wrap
+					+model-card-mini(6, 1, 92, 'chkd')
+					+model-card-mini(4, 2, 87)
+					+model-card-mini(6, 3, 92)
+					+model-card-mini(4, 4, 87)
 				
 					
 			//========= Images Block ========
@@ -109,4 +119,8 @@ section.constructor.white-bg.mt-30
 						+model-color('#000000', '#f6e13c')
 						+model-color('#79cb37', '#79cb37')
 						+model-color('#ea2128', '#ea2128')
-
+				.constructor-frame__button.mt-auto
+					a(href="#order-form").btn
+						span Заказать
+						svg.angle-right
+							use(href="./img/spriteSvg.svg#angle-right")

@@ -7,10 +7,13 @@
 
 @import "blocks/_menu-toggle";
 @import "blocks/_swiper-slider";
+@import "blocks/_model-cards";
 //sections
 
- @import "sections/header"
- ;@import "sections/header-banner";
+ @import "sections/header";
+ @import "sections/header-banner";
  @import "sections/steps";
+@import "sections/consructor-inner";
  @import "sections/video-preview";
  @import "sections/review";
+

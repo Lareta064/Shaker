@@ -25,7 +25,7 @@ mixin model-color(bgColor, svgColor, chkd)
 //============= Consructor steps =============
 section.constructor.white-bg.mt-30
 	.container
-		#constructor-block.constructor-block
+		.constructor-block
 			.constructor-header.d-flex-y
 				h3.title-25.active(js-step-title) Шаг 1
 				h3.title-25(js-step-title) Шаг 2
@@ -34,7 +34,7 @@ section.constructor.white-bg.mt-30
 			.constructor-body
 				//======= STEP 1 =====
 				.constructor-frame.active(js-step-content)
-					p.title-20 Выберите модель
+					p.title-20.mb-20 Выберите модель
 					.models-cards
 						+model-card(6, 1, 92, 'chkd')
 						+model-card(4, 2, 87)
@@ -132,7 +132,7 @@ section.constructor.white-bg.mt-30
 							span Выбрать модель
 							
 
-						a(href="#!").btn
+						a(href="#order-form").btn
 							span Заказать
 							svg.angle-right
 								use(href="./img/spriteSvg.svg#angle-right")
