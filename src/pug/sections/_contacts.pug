@@ -49,3 +49,11 @@ section.contacts#contacts
 						span
 					.form-item
 						textarea(type="text" name="message" placeholder="Ваш комментарий...")
+					.form-notice.d-flex
+						span.notice-icon
+						p ВНИМАНИЕ! Продаем только оптом, мин. партия: 84 штуки.
+					label.form-confirm
+						input(type="checkbox" name="user_confirm")
+						p Отправляя данные, я даю согласие на обработку персональных данных в соответствии с #[a(href="#!") Политикой конфиденциальности]
+					.form-submit
+						button.btn(type="submit") Отправить

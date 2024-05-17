@@ -83,3 +83,21 @@
  	display: inline-block;
  	font-weight: 600;
  }
+ .form-notice{
+	column-gap: 10px;
+	font-family: var(--fontMedium);
+	align-items: center;
+	font-weight: 500;
+	margin-bottom: 30px;
+ }
+ .form-confirm{
+	display: flex;
+	align-items: flex-start;
+	column-gap: 16px;
+	margin-bottom: 30px;
+	a{
+		color: #2899f8;
+		border-bottom: 1px solid #2899f8;
+		display: inline;
+	}
+ }
