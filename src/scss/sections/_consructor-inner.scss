@@ -4,3 +4,10 @@
 		flex-shrink: 0;
 	}
 }
+.constructor.constructor-minimize{
+	.constructor-form__options{
+		display: flex;
+		flex-direction:column ;
+		&>*{width: 100%;}
+	}
+}
