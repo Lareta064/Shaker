@@ -1,4 +1,5 @@
 mixin model-card(title, imgSrc, imgW, chkd)
+	//======= single model =======
 	label.model-card-label.special-label
 		if chkd
 			input(type="radio" name="shaker-model" checked)
@@ -28,20 +29,20 @@ section.constructor.white-bg.mt-30
 		#constructor-block.constructor-block
 			.d-flex
 			
-				.constructor-step.active(js-step-content)
+				.constructor-frame
 					p.title-20 Выберите модель
-					.constructor-step__cards
+					//=======  MODELS CARDS =======
+					.constructor-frame__cards
 						+model-card(6, 1, 92, 'chkd')
 						+model-card(4, 2, 87)
 						+model-card(6, 3, 92)
 						+model-card(4, 4, 87)
 
-				.constructor-step__row.d-flex
+				.constructor-frame__row.d-flex
 					
 					.constructor-form.d-flex
 						//========= Images Block ========
 						.constructor-form__display.d-flex-x
-							p.step-one-result С01 <br>600 мл
 							.constructor-form__images
 								img.model-base(src="./img/c01/c01_base.webp", width="270" alt="c01")
 								img.model-body(src="./img/c01/c01_body.webp", width="270" alt="c01")

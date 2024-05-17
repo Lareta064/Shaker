@@ -1,6 +1,6 @@
-.constructor-step {
+.constructor-frame[js-step-content]{
 	display: none;
-	opacity:0 ;
+	opacity:0;
 	&.active {
 		display: block;
 		animation-name: slowOpacity;
@@ -8,8 +8,10 @@
 		animation-timing-function: linear;
 		animation-fill-mode: forwards;
 		animation-delay: .2s;
-
 	}
+}
+.constructor-frame {
+	
 	
 	&__row.d-flex{
 		&>.title-20{flex-shrink: 0;}
@@ -81,17 +83,17 @@
 	left: 30px;
 	right: 30px;
 }
-.constructor-step{
+.constructor-frame{
 	.title-20{margin-bottom: 15px;}
 }
-.constructor-step__button{
+.constructor-frame__button{
 	display: flex;
 	justify-content: flex-end;
 	@media (max-width: 767px) {
 	 justify-content: center;
 	}
 }
-.constructor-step__cards{
+.constructor-frame__cards{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap:10px;
@@ -145,7 +147,7 @@
 .constructor-form__display{
 	position: relative;
 	
-	.step-one-result{
+	.current-model-name{
 		display: none;
 		font-family: va(--fontMedium);
 		font-weight: 500;
@@ -281,7 +283,7 @@
 .model-color.model-color--current{
 	transform: rotate(45deg) scale(1.5);
 }
-.constructor-step__footer{
+.constructor-frame__footer{
 	justify-content: space-between;
 	margin-top: -50px;
 	@media (max-width: 1023px) {
