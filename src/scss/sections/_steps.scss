@@ -1,3 +1,5 @@
+
+
 *[js-step-content]{
 	display: none;
 	opacity:0;
@@ -22,23 +24,22 @@
 	}
 }
 .constructor-header{
-	
 	column-gap: 25px;
 	margin-bottom: 6px;
 	.title-25{opacity: 0.3; transition: .3s; }
 	.title-25.active {opacity: 1;}
 	
 }
-.constructor-block{
-	position: relative;
+// .constructor-block{
+// 	position: relative;
 	
-}
-.constructor-footer{
-	position: absolute;
-	bottom: 30px;
-	left: 30px;
-	right: 30px;
-}
+// }
+// .constructor-footer{
+// 	position: absolute;
+// 	bottom: 30px;
+// 	left: 30px;
+// 	right: 30px;
+// }
 
 .constructor-frame__button{
 	display: flex;
@@ -48,9 +49,9 @@
 	}
 }
 
-.constructor-form__display{
-	position: relative;
-}
+// .constructor-form__display{
+// 	position: relative;
+// }
 .current-model-name {
 	display: none;
 	font-family: var(--fontMedium);

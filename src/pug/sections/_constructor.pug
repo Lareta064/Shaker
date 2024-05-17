@@ -37,29 +37,33 @@ mixin model-color(bgColor, svgColor, chkd)
 //============= Consructor steps =============
 section.constructor.constructor-minimize.white-bg.mt-30
 	.container
-		.constructor-block.d-flex
-			//======= левая колонка =====
-			.constructor-column
-				p.title-20.mb-20 Собрать свой шейкер
+		.constructor-display.active
+			
+			//=======LEFT COLUMN ======
+			.constructor-column-left
+				h3.title-20.mb-20 Собрать свой шейкер
 				//=======  MODELS CARDS =======
 				.models-cards.models-cards--wrap
 					+model-card-mini(6, 1, 92, 'chkd')
 					+model-card-mini(4, 2, 87)
 					+model-card-mini(6, 3, 92)
 					+model-card-mini(4, 4, 87)
-				
-					
-			//========= Images Block ========
-			.constructor-form__display.d-flex-x
+			
+			
+			//======= CENTER COLUMN ======
+			.constructor-column-center
+				//========= Images Block ========
 				.constructor-images
 					img.model-base(src="./img/c01/c01_base.webp", width="270" alt="c01")
 					img.model-body(src="./img/c01/c01_body.webp", width="270" alt="c01")
 					img.model-cap(src="./img/c01/c01_cap_yellow.webp", width="270" alt="c01")
 					img.model-snap(src="./img/c01/c01_snap.webp", width="270" alt="c01")
-						
-			//====== OPTIONS ===============
-			.constructor-form__options
 				
+				//======= current model name (visible in mob version) =====
+				p.current-model-name С01 <br>600 мл
+			
+			//======= Right COLUMN ======
+			.constructor-column-right
 				//====== PART ITEMS ===============
 				.model-parts
 					//======== single item =======
@@ -94,31 +98,34 @@ section.constructor.constructor-minimize.white-bg.mt-30
 						span.color-second Белый
 					
 					//======== Палитра цветов =====
-					.colors-palette
-						+model-color('white', 'white', 'chkd')(class="model-color--current")
-						+model-color('#f6e13c', 'white')
-						+model-color('#f99827', 'white')
-						+model-color('#e4476a', 'white')
-						+model-color('#79cb37', 'white')
-						+model-color('#78b1e0', '#78b1e0')
-						+model-color('#fec83c', '#f6e13c')
-						+model-color('#000000', '#f6e13c')
-						+model-color('#79cb37', '#79cb37')
-						+model-color('#ea2128', '#ea2128')
-						+model-color('#653797', '#653797')
-						+model-color('#ffffff', '#000000')
-						+model-color('#78b1e0', '#000000')
-						+model-color('#f6e13c', '#000000')
-						+model-color('#f99827', '#000000')
-						+model-color('#f6e13c', 'white')
-						+model-color('#f99827', 'white')
-						+model-color('#e4476a', 'white')
-						+model-color('#79cb37', 'white')
-						+model-color('#78b1e0', '#78b1e0')
-						+model-color('#fec83c', '#f6e13c')
-						+model-color('#000000', '#f6e13c')
-						+model-color('#79cb37', '#79cb37')
-						+model-color('#ea2128', '#ea2128')
+					.scroll-horizontal
+						.colors-palette
+							+model-color('white', 'white', 'chkd')(class="model-color--current")
+							+model-color('#f6e13c', 'white')
+							+model-color('#f99827', 'white')
+							+model-color('#e4476a', 'white')
+							+model-color('#79cb37', 'white')
+							+model-color('#78b1e0', '#78b1e0')
+							+model-color('#fec83c', '#f6e13c')
+							+model-color('#000000', '#f6e13c')
+							+model-color('#79cb37', '#79cb37')
+							+model-color('#ea2128', '#ea2128')
+							+model-color('#653797', '#653797')
+							+model-color('#ffffff', '#000000')
+							+model-color('#78b1e0', '#000000')
+							+model-color('#f6e13c', '#000000')
+							+model-color('#f99827', '#000000')
+							+model-color('#f6e13c', 'white')
+							+model-color('#f99827', 'white')
+							+model-color('#e4476a', 'white')
+							+model-color('#79cb37', 'white')
+							+model-color('#78b1e0', '#78b1e0')
+							+model-color('#fec83c', '#f6e13c')
+							+model-color('#000000', '#f6e13c')
+							+model-color('#79cb37', '#79cb37')
+							+model-color('#ea2128', '#ea2128')
+				
+				//=========BUTTON ===========
 				.constructor-frame__button.mt-auto
 					a(href="#order-form").btn
 						span Заказать
