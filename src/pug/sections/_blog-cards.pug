@@ -1,4 +1,5 @@
 mixin blog-card(img, title, txt)
+	//=========== single card ============
 	a(href="single-blog.html").blog-card.img-zoom
 		.blog-card__img
 			img(src="./img/blog/"+ img +".webp", alt="img")
@@ -10,6 +11,7 @@ mixin blog-card(img, title, txt)
 				span.btn Читать
 				span 02 08 2022
 
+//================= BLOG CARDS ==============
 section.blog
 	.section-title
 		h2.h2 Полезные статьи

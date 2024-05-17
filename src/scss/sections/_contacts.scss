@@ -1,0 +1,39 @@
+.contacts{
+	background-color: #fff;
+	padding: 30px 50px;
+	&-content{
+		display: flex;
+		column-gap: 70px;
+	}
+	&-column{
+		width: 430px;
+		flex-shrink: 0;
+	}
+	&-form-wrapper{
+		flex-grow: 1;
+	}
+}
+.manager-card{
+	column-gap:26px;
+	font-family: var(--fontMedium);
+	&__img{
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		overflow: hidden;
+		flex-shrink: 0;
+	}
+	&__info{
+		padding-top: 15px;
+		
+	}
+	&__links a{
+		display: block;
+		width: fit-content;
+		padding-block: 2px;
+	}
+	.social-block{
+		gap:11px;
+		margin-bottom: 45px;
+	}
+}
