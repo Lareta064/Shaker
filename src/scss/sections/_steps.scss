@@ -93,7 +93,7 @@
 	 justify-content: center;
 	}
 }
-.constructor-frame__cards{
+.models-cards{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap:10px;
@@ -149,7 +149,7 @@
 	
 	.current-model-name{
 		display: none;
-		font-family: va(--fontMedium);
+		font-family: var(--fontMedium);
 		font-weight: 500;
 		@media (max-width: 767px) {
 		display: block;
@@ -178,7 +178,7 @@
 	   height: 230px;
 	}
 }
-.constructor-form__parts{
+.model-parts{
 	margin-bottom: 30px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -221,7 +221,7 @@
 	    margin-bottom: 0;
 	}
 }
-.constructor-form__colors-block{
+.colors-palette-block{
 	.txt-bold{margin-bottom: 16px;}
 	@media (max-width: 767px) {
 		overflow-x: auto;
@@ -232,7 +232,7 @@
 		}
 	}
 }
-.constructor-form__colors{
+.colors-palette{
 	display: flex;
 	gap:20px;
 	flex-wrap: wrap;

@@ -35,7 +35,7 @@ section.constructor.white-bg.mt-30
 				//======= STEP 1 =====
 				.constructor-frame.active(js-step-content)
 					p.title-20 Выберите модель
-					.constructor-frame__cards
+					.models-cards
 						+model-card(6, 1, 92, 'chkd')
 						+model-card(4, 2, 87)
 						+model-card(6, 3, 92)
@@ -64,7 +64,7 @@ section.constructor.white-bg.mt-30
 							.constructor-form__options
 								
 								//====== PART ITEMS ===============
-								.constructor-form__parts
+								.model-parts
 									//======== single item =======
 									label.model-part.special-label
 										input(type="radio" name="model-part" checked)
@@ -89,7 +89,7 @@ section.constructor.white-bg.mt-30
 										button.btn-slim Печать на стакане
 								
 								//==========COLOR PALETTE =======
-								.constructor-form__colors-block
+								.colors-palette-block
 									//======== Выбранные цвета =====
 									p.txt-bold#output-color
 										span.color-first Белый
@@ -97,7 +97,7 @@ section.constructor.white-bg.mt-30
 										span.color-second Белый
 									
 									//======== Палитра цветов =====
-									.constructor-form__colors
+									.colors-palette
 										+model-color('white', 'white', 'chkd')(class="model-color--current")
 										+model-color('#f6e13c', 'white')
 										+model-color('#f99827', 'white')

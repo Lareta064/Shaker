@@ -26,89 +26,87 @@ mixin model-color(bgColor, svgColor, chkd)
 //============= Consructor steps =============
 section.constructor.white-bg.mt-30
 	.container
-		#constructor-block.constructor-block
-			.d-flex
+		#constructor-block.constructor-block.d-flex
 			
-				.constructor-frame
-					p.title-20 Выберите модель
-					//=======  MODELS CARDS =======
-					.constructor-frame__cards
-						+model-card(6, 1, 92, 'chkd')
-						+model-card(4, 2, 87)
-						+model-card(6, 3, 92)
-						+model-card(4, 4, 87)
-
-				.constructor-frame__row.d-flex
+			//======= левая колонка =====
+			.constructor-column
+				p.title-20 Выберите модель
+				//=======  MODELS CARDS =======
+				.models-cards
+					+model-card(6, 1, 92, 'chkd')
+					+model-card(4, 2, 87)
+					+model-card(6, 3, 92)
+					+model-card(4, 4, 87)
+				
 					
-					.constructor-form.d-flex
-						//========= Images Block ========
-						.constructor-form__display.d-flex-x
-							.constructor-form__images
-								img.model-base(src="./img/c01/c01_base.webp", width="270" alt="c01")
-								img.model-body(src="./img/c01/c01_body.webp", width="270" alt="c01")
-								img.model-cap(src="./img/c01/c01_cap_yellow.webp", width="270" alt="c01")
-								img.model-snap(src="./img/c01/c01_snap.webp", width="270" alt="c01")
+			//========= Images Block ========
+			.constructor-form__display.d-flex-x
+				.constructor-form__images
+					img.model-base(src="./img/c01/c01_base.webp", width="270" alt="c01")
+					img.model-body(src="./img/c01/c01_body.webp", width="270" alt="c01")
+					img.model-cap(src="./img/c01/c01_cap_yellow.webp", width="270" alt="c01")
+					img.model-snap(src="./img/c01/c01_snap.webp", width="270" alt="c01")
 						
-						//====== OPTIONS ===============
-						.constructor-form__options
-							
-							//====== PART ITEMS ===============
-							.constructor-form__parts
-								//======== single item =======
-								label.model-part.special-label
-									input(type="radio" name="model-part" checked)
-									span.btn-slim Клапан
-							
-								//======== single item =======
-								label.model-part.special-label
-									input(type="radio" name="model-part")
-									span.btn-slim Петля						
-								//======== single item =======
-								label.model-part.special-label
-									input(type="radio" name="model-part")
-									span.btn-slim Крышка
-							
-								//======== single item =======
-								label.model-part.special-label
-									input(type="radio" name="model-part")
-									span.btn-slim Стакан							
-								//======== single item =======
-								label.model-part.special-label
-									input(type="radio" name="model-part")
-									button.btn-slim Печать на стакане
-							
-							//==========COLOR PALETTE =======
-							.constructor-form__colors-block
-								//======== Выбранные цвета =====
-								p.txt-bold#output-color
-									span.color-first Белый
-									span -
-									span.color-second Белый
-								
-								//======== Палитра цветов =====
-								.constructor-form__colors
-									+model-color('white', 'white', 'chkd')(class="model-color--current")
-									+model-color('#f6e13c', 'white')
-									+model-color('#f99827', 'white')
-									+model-color('#e4476a', 'white')
-									+model-color('#79cb37', 'white')
-									+model-color('#78b1e0', '#78b1e0')
-									+model-color('#fec83c', '#f6e13c')
-									+model-color('#000000', '#f6e13c')
-									+model-color('#79cb37', '#79cb37')
-									+model-color('#ea2128', '#ea2128')
-									+model-color('#653797', '#653797')
-									+model-color('#ffffff', '#000000')
-									+model-color('#78b1e0', '#000000')
-									+model-color('#f6e13c', '#000000')
-									+model-color('#f99827', '#000000')
-									+model-color('#f6e13c', 'white')
-									+model-color('#f99827', 'white')
-									+model-color('#e4476a', 'white')
-									+model-color('#79cb37', 'white')
-									+model-color('#78b1e0', '#78b1e0')
-									+model-color('#fec83c', '#f6e13c')
-									+model-color('#000000', '#f6e13c')
-									+model-color('#79cb37', '#79cb37')
-									+model-color('#ea2128', '#ea2128')
+			//====== OPTIONS ===============
+			.constructor-form__options
+				
+				//====== PART ITEMS ===============
+				.model-parts
+					//======== single item =======
+					label.model-part.special-label
+						input(type="radio" name="model-part" checked)
+						span.btn-slim Клапан
+				
+					//======== single item =======
+					label.model-part.special-label
+						input(type="radio" name="model-part")
+						span.btn-slim Петля						
+					//======== single item =======
+					label.model-part.special-label
+						input(type="radio" name="model-part")
+						span.btn-slim Крышка
+				
+					//======== single item =======
+					label.model-part.special-label
+						input(type="radio" name="model-part")
+						span.btn-slim Стакан							
+					//======== single item =======
+					label.model-part.special-label
+						input(type="radio" name="model-part")
+						button.btn-slim Печать на стакане
+				
+				//==========COLOR PALETTE =======
+				.colors-palette-block
+					//======== Выбранные цвета =====
+					p.txt-bold#output-color
+						span.color-first Белый
+						span -
+						span.color-second Белый
+					
+					//======== Палитра цветов =====
+					.colors-palette
+						+model-color('white', 'white', 'chkd')(class="model-color--current")
+						+model-color('#f6e13c', 'white')
+						+model-color('#f99827', 'white')
+						+model-color('#e4476a', 'white')
+						+model-color('#79cb37', 'white')
+						+model-color('#78b1e0', '#78b1e0')
+						+model-color('#fec83c', '#f6e13c')
+						+model-color('#000000', '#f6e13c')
+						+model-color('#79cb37', '#79cb37')
+						+model-color('#ea2128', '#ea2128')
+						+model-color('#653797', '#653797')
+						+model-color('#ffffff', '#000000')
+						+model-color('#78b1e0', '#000000')
+						+model-color('#f6e13c', '#000000')
+						+model-color('#f99827', '#000000')
+						+model-color('#f6e13c', 'white')
+						+model-color('#f99827', 'white')
+						+model-color('#e4476a', 'white')
+						+model-color('#79cb37', 'white')
+						+model-color('#78b1e0', '#78b1e0')
+						+model-color('#fec83c', '#f6e13c')
+						+model-color('#000000', '#f6e13c')
+						+model-color('#79cb37', '#79cb37')
+						+model-color('#ea2128', '#ea2128')
 
