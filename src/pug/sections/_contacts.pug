@@ -1,5 +1,5 @@
 //================== CONTACTS ===============
-section.contacts
+section.contacts#contacts
 	.container
 		.contacts-content
 			.contacts-column
@@ -32,3 +32,20 @@ section.contacts
 							span.online-state__dot
 							span.online-state__text Сейчас онлайн
 			.contacts-form-wrapper
+				h2.title-25.mb-40 Оформим ваш заказ
+				
+				form.order-form
+					.form-item
+						input(type="text" placeholder="Ваше имя" name="name")
+					.form-item
+						input(type="text" placeholder="Ваш телефон" name="phone")
+					.form-item
+						input(type="text" placeholder="Ваш email" name="email")
+					.form-item.form-item--custom
+						input#file.inputfile(type="file" multiple)
+						label.form-label( for="file") 
+							span Добавить ваш логотип
+							span.icon-download
+						span
+					.form-item
+						textarea(type="text" name="message" placeholder="Ваш комментарий...")

@@ -16,6 +16,7 @@
 .manager-card{
 	column-gap:26px;
 	font-family: var(--fontMedium);
+	font-weight: 500;
 	&__img{
 		width: 150px;
 		height: 150px;
@@ -31,6 +32,7 @@
 		display: block;
 		width: fit-content;
 		padding-block: 2px;
+		white-space: nowrap;
 	}
 	.social-block{
 		gap:11px;

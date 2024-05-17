@@ -78,6 +78,8 @@
   input,
   button, button:focus, input:focus {
 	outline: none;
+  border: none;
+  background-color: none;
   }
   
   button {
