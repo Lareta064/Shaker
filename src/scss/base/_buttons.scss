@@ -1,4 +1,4 @@
-.btn, .btn-slim{
+.btn, .btn-slim, .btn-arrow{
 	display:flex;
 	width: fit-content;
 	justify-content: center;
@@ -25,6 +25,21 @@
 		flex-shrink: 0;
 		
 	}
+	svg.arrow-right {
+		width: 44px;
+		height: 16px;
+		flex-shrink: 0;
+	}
 
+}
+.btn-arrow{
+	height: auto;
+	border: 0;
+	padding-inline: 0;
+	&:hover{
+		background: none;
+		
+		color: #b1b1b1;
+	}
 }
 .btn-slim{height: 40px;padding-inline: 10px;}

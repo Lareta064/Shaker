@@ -1,14 +1,18 @@
 mixin blog-card(img, title, txt)
 	//=========== single card ============
-	a(href="single-blog.html").blog-card.img-zoom
+	.blog-card.img-zoom
 		.blog-card__img
 			img(src="./img/blog/"+ img +".webp", alt="img")
 		
 		.blog-card__body
-			h3.title-25 #{title}
+			a(href="single-blog.html").title-25 #{title}
 			p #{txt}
 			.blog-card__footer
-				span.btn Читать
+				a(href="single-blog.html").btn
+					span Читать
+					svg.arrow-right
+						use( href='./img/spriteSvg.svg#arrow')
+
 				span 02 08 2022
 
 //================= BLOG CARDS ==============

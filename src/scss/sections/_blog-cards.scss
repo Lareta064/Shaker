@@ -23,15 +23,25 @@
 	background-color: #fff;
 	display: flex;
 	flex-direction: column;
+	.btn svg{display: none;}
+	@media (max-width: 1023px){
+		.btn{
+			height: auto;
+			border: 0;
+			padding-inline: 0;
+			svg{display: block;}
+			&:hover{
+				background: none;
+				color: #b1b1b1;
+			}
+		}
+	}
 	@media (max-width: 767px) {
 		&:last-child{margin-right: 10px;}
 		width: 280px;
 		.title-25{font-size: 15px;}
 		&__body{padding: 16px;}
-		.btn{
-			height: 37px;
-			padding-inline: 30px;;
-		}
+		
 	}
 	&__img{
 		width: 100%;
