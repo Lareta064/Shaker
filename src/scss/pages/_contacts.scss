@@ -42,11 +42,12 @@
 		}
 		
 	}
-		.how-working {
-			.title-25 {
-				margin-bottom: 25px;
-			}
+	.how-working {
+		min-height: 470px;
+		.title-25 {
+			margin-bottom: 25px;
 		}
+	}
 	@media (max-width: 1023px) {
 		grid-template-columns: 1fr;
 	}
@@ -54,7 +55,7 @@
 .contacts-row +.contacts-row{margin-top: 10px;}
 .contacts-row.contacts-row--info{
 	align-items: start;
-	min-height: 470px;
+	
 	@media (max-width: 767px) {
 		min-height: unset;
 	}
