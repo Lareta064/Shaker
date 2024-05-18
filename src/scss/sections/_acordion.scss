@@ -34,11 +34,6 @@
 		z-index: 5;
 		transition: color .3s;
 
-		@media(max-width:767px) {
-			
-			padding-right: 40px;
-		}
-
 	}
 
 
@@ -58,12 +53,6 @@
 		width: 20px;
 		height: 20px;
 
-		@media(max-width:767px) {
-			width: 20px;
-			height: 20px;
-			top: 20px;
-			right: 20px;
-		}
 	}
 
 
