@@ -8,6 +8,8 @@
 			padding-top: 5px;
 			font-family: var(--fontMedium);
 			font-weight: 500;
+			a{transition: .3s; }
+			&:hover a{color: #000;}
 		}
 		li +li{
 			padding-left: 8px;

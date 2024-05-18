@@ -1,10 +1,10 @@
 .social-block{
 	display: flex;
 	flex-wrap: wrap;
-	gap: remy(16);
+	gap: 16px;
 	a{
-		width: remy(40);
-		height: remy(40);
+		width: 40px;
+		height: 40px;
 		border-radius: 50%;
 		
 		display: flex;
@@ -16,15 +16,15 @@
 	
 }
 .social-block-fixed .social-block{
-	width: remy(40);
+	width: 40px;
 	flex-direction: column;
 	position: fixed;
 	z-index: 5;
-	top: remy(120);
-	right: remy(50);
-	row-gap:remy(10);
+	top: 120px;
+	right: 50px;
+	row-gap:10px;
 	@media (max-width: 1439px) {
-	   right: remy(30);
+	   right: 30px;
 	}
 	@media (max-width: 1023px) {
 		display: none;

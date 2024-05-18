@@ -6,7 +6,7 @@
 	color:var(--lightText);
 	&-content{
 		
-		height: remy(78);
+		height: 78px;
 		&>*{padding-top: 15px;}
 		&>*+* {border-left: 1px solid rgb(61, 61, 61);}
 			
@@ -14,7 +14,7 @@
 		@media (max-width:1023px) {
 			
 			align-items: center;
-			height: remy(70);
+			height: 70px;
 			&>* {
 					padding-top: 0;
 				}
@@ -22,16 +22,16 @@
 	}
 	&-models{
 		flex-shrink:0;
-		padding-inline:remy(20);
+		padding-inline:20px;
 
 		a{
-			column-gap: remy(30);
+			column-gap: 30px;
 		}
 		@media (max-width:1023px){display: none;}
 	}
 	&-contacts{
 		white-space: nowrap;
-		padding-left: remy(24);
+		padding-left: 24px;
 		flex-grow: 1;
 		text-align: right;
 		a{font-size: 20px;}
@@ -43,7 +43,7 @@
 	&-burger{
 		display: none;
 		border-left: none;
-		width: remy(54);
+		width: 54px;
 		margin-left: auto;
 		
 		@media (max-width:1023px) {
@@ -52,7 +52,7 @@
 			justify-content: center;
 			align-items: center;
 			border-left: 1px solid rgb(61, 61, 61);
-			padding-left: remy(24);
+			padding-left: 24px;
 		}
 	}
 		
@@ -60,7 +60,7 @@
 	
 }
 .logo{
-	padding-right: remy(20);
+	padding-right: 20px;
 	span:has(sup){
 		font-size: 26px;
 		line-height: 0.8;
@@ -77,7 +77,7 @@
 		display: block;
 		font-size: remy(15);
 		color: var(--lightText);
-		margin-top: remy(7);
+		margin-top: 7px;
 		white-space: nowrap;
 		@media (max-width:767px) {
 			display: none;
@@ -85,10 +85,10 @@
 	}
 }
 .header-nav-desktop{
-	padding-inline: remy(20);
+	padding-inline: 20px;
 	ul{
 		display: flex;
-		column-gap:remy(24);
+		column-gap:20px;
 		flex-grow: 2;
 	}
 	@media (max-width:1023px) {
@@ -99,7 +99,7 @@
 	display: none;
 	width: 100%;
 	position: fixed;
-	inset:remy(70) 0 0;
+	inset:70px 0 0;
 	z-index: 10;
 	background-color: rgba(255,255,255, .5);
 	backdrop-filter: blur(5px);
@@ -109,15 +109,15 @@
 	
 	&__content{
 		background-color:var(--darkBg);
-		padding: remy(20) remy(30);
-		width: min(remy(240), 100%);
+		padding: 20px 30px;
+		width: min(240px, 100%);
 		margin-left: auto;
-		&>*+*{margin-top: remy(45)}
+		&>*+*{margin-top: 45px}
 		
 	}
 	&__list{
-		max-width: remy(130);
-		li +li{margin-top: remy(30);}
+		max-width: 130px;
+		li +li{margin-top: 30px;}
 		
 	}
 
