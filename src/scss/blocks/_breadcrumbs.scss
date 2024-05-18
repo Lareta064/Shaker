@@ -3,7 +3,7 @@
 		display: flex;
 		align-items: center;
 		color: #646464;
-		&:last-child, &:last-child a{color: #000000; pointer-events: none; cursor: default}
+		li:last-child, li:last-child a{color: #000000; pointer-events: none; cursor: default}
 		li{
 			padding-top: 5px;
 			font-family: var(--fontMedium);

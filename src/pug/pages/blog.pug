@@ -20,7 +20,7 @@ block content
 		.breadcrumbs
 			ul
 				li
-					a(href="#!") Главная
+					a(href="index.html") Главная
 				li
 					a(href="#!") Полезные статьи
 		section.blog
@@ -44,6 +44,19 @@ block content
 				
 				+blog-card(9, 'Ее точно хватит надолго!','Заказывайте шейкеры #[br]по честной цене!')
 		
+	
+			.pagination
+				a(href="#!").btn-next
+					svg
+						use(href="./img/spriteSvg.svg#caret-left")
+				a(href="#!").pagination-counter
+					span 1
+					span /
+					span 14
+				
+				a(href="#!").btn-prev
+					svg
+						use(href="./img/spriteSvg.svg#caret-right")
 	include ../sections/_contacts.pug
 	include ../sections/_footer.pug
 	
