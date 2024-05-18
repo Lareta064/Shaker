@@ -1,6 +1,9 @@
 .contacts{
 	background-color: #fff;
 	padding: 30px 50px;
+	.container {
+		width: min(1120px, 100%);
+	}
 	@media (max-width: 1023px) {
 		padding: 30px 20px;
 	}

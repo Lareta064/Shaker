@@ -60,6 +60,17 @@
 }
 .logo{
 	padding-right: remy(20);
+	span:has(sup){
+		font-size: 26px;
+		line-height: 0.8;
+		font-family: var(--fontBold);
+		font-weight: bold;
+	}
+	sup{
+		font-size: 10px;
+		font-family: var(--fontMedium);
+		font-weight: 500;
+	}
 	span{
 		flex-shrink: 0;
 		display: block;
