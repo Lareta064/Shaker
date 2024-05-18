@@ -4,39 +4,6 @@
 		height: unset;
 		display: flex;
 	}
-	.swiper-pagination{
-		bottom: 12px;
-		width: fit-content;
-		position: absolute;
-		
-		left: 50%;
-		transform: translate(-50%);
-		font-weight: 700;
-		font-variant-numeric: tabular-nums;
-	}
-	.swiper-button-prev,.swiper-button-next{
-		top:calc(100% - 20px);
-
-	}
-	.swiper-button-prev{left: 43%}
-	.swiper-button-next{right:43%}
-	@media (max-width: 1199px) {
-	    .swiper-button-prev {left: 38%;}
-		.swiper-button-next {right: 38%;}
-	}
-	@media (max-width: 1023px) {
-		width: calc(50% + 50vw);
-	}
-	@media (max-width: 767px) {
-		width: 100%;
-	.swiper-button-prev {
-			left: 20%;
-		}
-	
-		.swiper-button-next {
-			right: 20%;
-		}
-	}
 }
 .review-card{
 	border-radius: 10px;

@@ -1,0 +1,50 @@
+.contacts-row{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 15px;
+	.contacts-block{
+		flex-shrink: 0;
+		flex-grow: 1;
+		background-color: #fff;
+		padding: 30px;
+		border-radius: 10px;
+		overflow:hidden;
+		&.d-flex{
+			gap:30px;
+			align-items: flex-start;
+			&>*{
+				border-radius: 10px;
+				padding: 10px 20px;
+			}
+		}
+		.contacts-opening{
+			flex-shrink: 0;
+		}
+		
+		address{
+			margin-top: 15px;
+			font-style: normal;
+			max-width: 200px;
+		}
+		
+	}
+		.how-working {
+			.title-25 {
+				margin-bottom: 25px;
+			}
+		}
+	@media (max-width: 1023px) {
+		grid-template-columns: 1fr;
+	}
+}
+.contacts-row +.contacts-row{margin-top: 10px;}
+.contacts-row.contacts-row--info{
+	align-items: start;
+	min-height: 470px;
+}
+.map{
+	width: 100%;
+	display: block;
+	height: 470px;
+	
+}

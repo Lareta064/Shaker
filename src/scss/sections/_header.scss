@@ -34,6 +34,7 @@
 		padding-left: remy(24);
 		flex-grow: 1;
 		text-align: right;
+		a{font-size: 20px;}
 		@media (max-width:1023px) {
 			display: none;
 		}

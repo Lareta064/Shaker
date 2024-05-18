@@ -18,7 +18,7 @@
 .social-block-fixed .social-block{
 	width: remy(40);
 	flex-direction: column;
-	position: absolute;
+	position: fixed;
 	z-index: 5;
 	top: remy(120);
 	right: remy(50);

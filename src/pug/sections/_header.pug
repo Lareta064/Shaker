@@ -28,9 +28,13 @@ header.header
 					li
 						a(href="blog.html")  Статьи
 					li
-						a(href="#!")  Контакты
-			.header-contacts.d-flex
-				a(href="tel:88007707419").contact-link 8 800 770 74 19
+						a(href="contacts.html")  Контакты
+			.header-contacts.contacts-links
+				a(href="tel:88007707419") 8 800 770 74 19
+				//===== кругляшок горит зеленым, если есть класс active  у родителя .online-state
+				.online-state.d-flex-y.active
+					span.online-state__dot
+					span.online-state__text Сейчас онлайн
 			
 			//====== mobile menu toggle =========
 			.header-burger
@@ -46,11 +50,11 @@ header.header
 							li
 								a(href="#!")  Производство<br> и&nbsp;печать
 							li
-								a(href="#!")  Полезные статьи
+								a(href="blog.html")  Полезные статьи
 							li
 								a(href="#!")  Как заказать
 							li
-								a(href="#!")  Контакты
+								a(href="contacts.html")  Контакты
 					
 					//====== mob menu tel =====
 					.mobile-menu__contacts

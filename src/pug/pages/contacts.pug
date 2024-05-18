@@ -1,0 +1,94 @@
+extends ../layouts/layout.pug
+
+block content
+	include ../sections/_header.pug
+	main.inner-page.mb-40
+		//======= breadcrumbs =======
+		.breadcrumbs
+			ul
+				li
+					a(href="#!") Главная
+				li
+					a(href="#!") Контакты
+		
+		section.contacts-main
+			h1.h1 Контакты
+			.container
+				.contacts-grid
+					//======== ROW =========
+					.contacts-row
+						//======== title block ======
+						.contacts-block.accent-bg.d-flex-center
+							h2.h2.txt-center Остались<br>вопросы?
+						
+						//====== opening hours + contacts =====
+						.contacts-block.d-flex
+							//====== opening hours =============
+							.contacts-opening.accent-bg
+								p 10:00 — 18:00
+								p Пн — Пт
+								//===== кругляшок горит зеленым, если есть класс active  у родителя .online-state
+								.online-state.d-flex-y.active
+									span.online-state__dot
+									span.online-state__text Сейчас онлайн
+							
+							//======contacts =====
+							.contacts-links
+								a(href="tel:+79068660922") +7 906 866 09 22
+								a(href="mailto:3@sbottle.ru") 3@sbottle.ru
+								address Челябинск, ул.&nbsp;Российская, 161
+
+					
+					//============= ROW ====================
+					.contacts-row.contacts-row--info
+						.contacts-block.how-working
+							h3.title-25 Как мы работаем?
+							.acordion
+								//=========== single block =============
+								.acor-item
+									input#acor1(type='radio' name='acor' checked='checked')
+									label(for='acor1') 01) Заявка
+									.acor-body
+										p Отправьте заявку любым удобным способом — по номеру 8 800 770-74-19, email, Viber, WhatsApp, Telegram, на наши странички в VK и Instagram, через форму обратной связи и даже через конструктор шейкера. Кстати через конструктор вы можете сразу дать понять менеджеру шейкеры в каких цветах вам больше нравятся.
+
+								//=========== single block =============
+								.acor-item
+									input#acor2(type='radio' name='acor')
+									label(for='acor2') 02) Дизайн макетов
+									.acor-body
+										p Отправьте заявку любым удобным способом — по номеру 8 800 770-74-19, email, Viber, WhatsApp, Telegram, на наши странички в VK и Instagram, через форму обратной связи и даже через конструктор шейкера. Кстати через конструктор вы можете сразу дать понять менеджеру шейкеры в каких цветах вам больше нравятся.
+
+								//=========== single block =============
+								.acor-item
+									input#acor3(type='radio' name='acor')
+									label(for='acor3') 03) Заключение договора и оплата
+									.acor-body
+										p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								
+								//=========== single block =============
+								.acor-item
+									input#acor4(type='radio' name='acor')
+									label(for='acor4') 04) Производство
+									.acor-body
+										p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								
+								//=========== single block =============
+								.acor-item
+									input#acor5(type='radio' name='acor')
+									label(for='acor5') 05) Отгрузка и доставка
+									.acor-body
+										p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									
+						.contacts-block.p-0
+							map.map
+								script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A63eb4a2915622d91de2ad7a02d86ccac3775bafed3de9bcb5f148c003b77dca4&amp;width=600&amp;height=600&amp;lang=ru_RU&amp;scroll=true")
+		
+	include ../sections/_contacts.pug
+	include ../sections/_footer.pug
+
+
+
+
+	
+block variables
+	-var title = "Shaker";
