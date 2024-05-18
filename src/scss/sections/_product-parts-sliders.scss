@@ -13,10 +13,18 @@
 		// grid-template-columns: 1fr 1fr;
 	}
 }
-.parts-sliders__item{
+.parts-sliders__item .swiper{
 	width: 386px;
+	
+	.swiper-slide{
+		img{
+			width: 100%;
+			aspect-ratio: 1;
+		}
+	}
+	
 	@media (max-width: 1364px) {
-		// width: 49%;
+		width: calc(90vw / 3);
 	}
 	.swiper-pagination{
 		padding-left: 10px;

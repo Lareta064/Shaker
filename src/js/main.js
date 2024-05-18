@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
  	var part1 = new Swiper(".product-part-1", {
 		loop: true,
 		speed: 1000,
-		
+		spaceBetween: 10,
 		 navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
  	var part2 = new Swiper(".product-part-2", {
 		loop: true,
 		speed: 1000,
-		
+		spaceBetween: 10,
 		 navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
  	var part3 = new Swiper(".product-part-3", {
 		loop: true,
 		speed: 1000,
-		
+		spaceBetween: 10,
 		 navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
  	var part4 = new Swiper(".product-part-4", {
 		loop: true,
 		speed: 1000,
-		
+		spaceBetween: 10,
 		 navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
