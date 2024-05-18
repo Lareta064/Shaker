@@ -1,0 +1,23 @@
+extends ../layouts/layout.pug
+
+block content
+	include ../sections/_header.pug
+	main.inner-page
+		//======= breadcrumbs =======
+		.breadcrumbs
+			ul
+				li
+					a(href="index.html") Главная
+				li
+					a(href="blog.html") Полезные статьи
+				li
+					a(href="#!") Шейкер + маркетплейс
+		
+		section.single-article
+			h1.h1 Шейкер + маркетплейс = 💜
+			.inner-page-banner
+				img(src="./img/article-bg.webp", alt="banner")
+				
+
+block variables
+	-var title = "Shaker";
