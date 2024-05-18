@@ -1,0 +1,83 @@
+//================== CONTACTS ===============
+section.contacts#contacts
+	.container
+		.contacts-content
+			.contacts-column
+				h2.title-25.mb-40 Ответим на ваши вопросы
+				
+				//========= MANAGER CARD =================
+				.manager-card.d-flex
+					.manager-card__img
+						img(src="./img/manager1.webp", width="150" alt="img")
+					.manager-card__info
+						p.title-25.mb-15 Анастасия
+						
+						.contacts-links.mb-15
+							a(href="tel:+79068660922") +7 906 866 09 22
+							a(href="mailto:3@sbottle.ru") 3@sbottle.ru
+
+						//=====social =======
+						.social-block
+							a(href="#!").icon-vk
+								img(src="./img/social/vk.svg", alt="vk")
+							a(href="#!").icon-inst
+								img(src="./img/social/inst.svg", alt="inst")
+							a(href="#!").icon-tel
+								img(src="./img/social/app.svg", alt="app")
+							a(href="#!").icon-viber
+								img(src="./img/social/viber.svg", alt="viber")
+							a(href="#!").icon-tg
+								img(src="./img/social/tg.svg", alt="tg")
+			
+
+				
+				//========= MANAGER CARD =================
+				.manager-card.d-flex
+					.manager-card__img
+						img(src="./img/manager2.webp", width="150" alt="img")
+					.manager-card__info
+						p.title-25.mb-15 Ольга
+						
+						.contacts-links.mb-15
+							a(href="tel:+79068660922") +7 906 866 09 22
+							a(href="mailto:3@sbottle.ru") 3@sbottle.ru
+
+						//=====social =======
+						.social-block
+							a(href="#!").icon-vk
+								img(src="./img/social/vk.svg", alt="vk")
+							a(href="#!").icon-inst
+								img(src="./img/social/inst.svg", alt="inst")
+							a(href="#!").icon-tel
+								img(src="./img/social/app.svg", alt="app")
+							a(href="#!").icon-viber
+								img(src="./img/social/viber.svg", alt="viber")
+							a(href="#!").icon-tg
+								img(src="./img/social/tg.svg", alt="tg")
+
+			.contacts-form-wrapper
+				h2.title-25.mb-40 Оформим ваш заказ
+				
+				form.order-form
+					.form-item
+						input(type="text" placeholder="Ваше имя" name="name")
+					.form-item
+						input(type="text" placeholder="Ваш телефон" name="phone")
+					.form-item
+						input(type="text" placeholder="Ваш email" name="email")
+					.form-item.form-item--custom
+						input#file.inputfile(type="file" multiple)
+						label.form-label( for="file") 
+							span Добавить ваш логотип
+							span.icon-download
+						span
+					.form-item
+						textarea(type="text" name="message" placeholder="Ваш комментарий...")
+					.form-notice.d-flex
+						span.notice-icon
+						p ВНИМАНИЕ! Продаем только оптом, мин. партия: 84 штуки.
+					label.form-confirm
+						input(type="checkbox" name="user_confirm")
+						p Отправляя данные, я даю согласие на обработку персональных данных в соответствии с #[a(href="#!") Политикой конфиденциальности]
+					.form-submit
+						button.btn(type="submit") Отправить
