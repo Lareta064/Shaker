@@ -3,6 +3,7 @@
 	padding-block: 25px 45px;
 	color: var(--lightText);
 	.logo{
+		padding-right: 0;
 		span:has(sup){
 			font-size: 17px;
 			line-height: 0.2;
@@ -10,5 +11,73 @@
 			font-weight: 500;
 		}
 		sup{font-size: 8px;}
+		span {
+
+			white-space: normal;
+		}
+		@media (max-width: 767px) {
+		span{display: block; text-align: center;}
+		}
+		
 	}
+
+	&-content{
+		display: flex;
+		column-gap: 58px;
+	}
+	&-logo{
+		display: flex;
+		align-items:flex-end;
+	}
+	&-menu-wrapper{
+		flex-grow:1;
+	}
+	&-menu{
+		display: flex;
+		justify-content: space-between;
+		nav{
+			a{
+				display: block;
+				width: fit-content;
+				position: relative;
+				padding-block: 7px;
+				&:after{
+					content: '';
+					height: 1px;
+					position: absolute;
+					left: 0;
+					bottom: 4px;
+					width: 100%;
+					background-color: var(--lightText);
+					transition: .3s; 
+				}
+				&:hover{color: rgb(195, 195, 195);}
+				&:hover:after{
+					width: 0;
+				}
+			}
+		}
+	}
+	@media (max-width:991px) {
+		
+		&-content, &-menu{
+			flex-direction: column;
+			row-gap: 40px;
+		}
+		&-menu-wrapper{
+			.title-15{
+				margin-bottom: 16px;
+
+			}
+		}
+		&-menu{row-gap: 7px}
+	}
+	@media (max-width: 767px) {
+	    text-align: center;
+		.logo,
+		&-menu a{
+				margin: 0 auto;
+			}
+	}
+
 }
