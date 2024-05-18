@@ -1,0 +1,25 @@
+.breadcrumbs{
+	ul{
+		display: flex;
+		align-items: center;
+		color: #646464;
+		&:last-child, &:last-child a{color: #000000; pointer-events: none; cursor: default}
+		li{
+			padding-top: 5px;
+			font-family: var(--fontMedium);
+			font-weight: 500;
+		}
+		li +li{
+			padding-left: 8px;
+			position: relative;
+			&:before{
+				content: '/';
+				margin-right: 5px;
+
+			}
+		}
+	}
+}
+.breadcrumbs + *{
+	padding-top: 40px;
+}

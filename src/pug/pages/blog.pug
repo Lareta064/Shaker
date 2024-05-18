@@ -1,0 +1,50 @@
+extends ../layouts/layout.pug
+mixin blog-card(img, title, txt)
+	//=========== single card ============
+	a(href="single-blog.html").blog-card.img-zoom
+		.blog-card__img
+			img(src="./img/blog/"+ img +".webp", alt="img")
+		
+		.blog-card__body
+			h3.title-25 !{title}
+			p !{txt}
+			.blog-card__footer
+				span.btn Читать
+				span 02 08 2022
+
+block content
+	include ../sections/_header.pug
+	
+	main.inner-page
+		//======= breadcrumbs =======
+		.breadcrumbs
+			ul
+				li
+					a(href="#!") Главная
+				li
+					a(href="#!") Полезные статьи
+		section.blog
+			h1.h1 Полезные статьи
+			.blog-articles
+				+blog-card(1, 'Ищете подходящий товар для продаж на wildberries?','Мы уверены что шейкеры вам подойдут')
+				
+				+blog-card(3, 'Работаем в штатом режиме.','Что успели сделать чтобы стабилизировать ситуацию')
+
+				+blog-card(4, '100% оранжевый','Ограниченная серия')
+				
+				+blog-card(2, 'Цвет месяца — PINK','Апрель в розовом цвете. Скидка внутри →')
+				
+				+blog-card(5, 'Цвет месяца — LIGHT BLUE TWO','Мы продолжаем традиционную скидку месяца. одробности внутри →')
+				
+				+blog-card(6, 'Наша типография','Все интересное в статье')
+				
+				+blog-card(7, 'Почему шейкер не может стоить 60 рублей?','По той же причине, по которой сноуборд дороже деревянной доски. ')
+				
+				+blog-card(8, 'Жидкая магнезия от ShakerBottle','Ее точно хватит надолго!')
+				
+				+blog-card(9, 'Ее точно хватит надолго!','Заказывайте шейкеры #[br]по честной цене!')
+		
+		include ../sections/_review.pug
+	
+block variables
+	-var title = "Shaker";

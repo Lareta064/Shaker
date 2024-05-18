@@ -8,6 +8,7 @@
 @import "blocks/_menu-toggle";
 @import "blocks/_swiper-slider";
 @import "blocks/_model-cards";
+@import "blocks/_breadcrumbs";
 //sections
 
  @import "sections/header";
@@ -20,3 +21,5 @@
 @import "sections/blog-cards";
 @import "sections/contacts";
 @import "sections/footer";
+
+@import "pages/blog-page";

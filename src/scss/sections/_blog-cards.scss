@@ -21,6 +21,8 @@
 	border-radius: 10px;
 	width: min(586px, 100%);
 	background-color: #fff;
+	display: flex;
+	flex-direction: column;
 	@media (max-width: 767px) {
 		&:last-child{margin-right: 10px;}
 		width: 280px;
@@ -45,6 +47,8 @@
 		padding: 25px 30px 30px;
 		display: flex;
 		flex-direction: column;
+		width: 100%;
+		flex-grow:1;
 		.title-25{
 			margin-bottom: 20px;
 			flex-shrink: 0;
