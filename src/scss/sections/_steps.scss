@@ -136,7 +136,7 @@
 	
 	@media (max-width: 767px) {
 		overflow: hidden;
-		width: calc(50% + 50vw )!important;
+		width: calc(50% + 50vw - 10px)!important;
 		overflow-x: auto;
 		scrollbar-width: none;
 		&::-webkit-scrollbar{display: none;}

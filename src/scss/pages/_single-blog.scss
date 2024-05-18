@@ -89,3 +89,21 @@
 	padding-left: 0;
 	}
 }
+.blog-articles--four{
+	overflow: hidden;
+	overflow-x: auto;
+	scrollbar-width: none;
+	&::-webkit-scrollbar{display: none;}
+
+	@media (max-width: 1279px) {
+	width: calc(50% + 50vw - 10px);
+	}
+	.blog-articles{
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		@media (max-width: 1279px) {
+			grid-auto-columns: min-content;
+			grid-auto-flow: column;
+		}
+		
+	}
+}

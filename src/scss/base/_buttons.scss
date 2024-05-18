@@ -43,3 +43,24 @@
 	}
 }
 .btn-slim{height: 40px;padding-inline: 10px;}
+.back-top{
+	position: fixed;
+	bottom: 80px;
+	right: 40px;
+	transform: scale(0);
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 0 8px rgba(0,0,0, .2);
+	color: #000;
+	transition: .3s;
+	&.active{transform: scale(1);}
+	&:hover{
+		background-color: #000;
+		color: white;
+	}
+	svg{
+		transform: rotate(-90deg);
+	}
+}

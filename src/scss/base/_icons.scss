@@ -81,3 +81,8 @@
 	background-size: contain;
 	flex-shrink: 0;
 }
+svg.caret-right, svg.caret-left{
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+}

@@ -160,6 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			},
 		},
 	});
+
 	/**********for custom input type="file********* */
 	'use strict';
 
@@ -199,6 +200,20 @@ document.addEventListener("DOMContentLoaded", function () {
 			input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
 		});
 	}( document, window, 0 ));
+
+	/*===== back Top button ===== */
+	const backTop = document.querySelector('.back-top');
+	if(backTop){
+		window.addEventListener('scroll', ()=>{
+			if(window.scrollY > 700){
+				backTop.classList.add('active');
+			}else{
+				backTop.classList.remove('active')
+			}
+		})
+	}
+
+
 });
 
 /* ===== constructor steps ======= */

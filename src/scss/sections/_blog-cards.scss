@@ -16,6 +16,7 @@
 }
 .blog-card{
 	font-family: var(--fontMedium);
+	min-width: 280px;
 	font-weight: 500;
 	overflow: hidden;
 	border-radius: 10px;
@@ -23,6 +24,9 @@
 	background-color: #fff;
 	display: flex;
 	flex-direction: column;
+	a:hover{
+		color: #b1b1b1;
+	}
 	.btn svg{display: none;}
 	@media (max-width: 1023px){
 		.btn{
@@ -32,7 +36,6 @@
 			svg{display: block;}
 			&:hover{
 				background: none;
-				color: #b1b1b1;
 			}
 		}
 	}
