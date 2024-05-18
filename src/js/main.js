@@ -102,8 +102,58 @@ document.addEventListener("DOMContentLoaded", function () {
 			 type: "fraction",
 		}
 	});
- 	
-	
+ 	var part1 = new Swiper(".product-part-1", {
+		loop: true,
+		speed: 1000,
+		
+		 navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+	});
+ 	var part2 = new Swiper(".product-part-2", {
+		loop: true,
+		speed: 1000,
+		
+		 navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+	});
+ 	var part3 = new Swiper(".product-part-3", {
+		loop: true,
+		speed: 1000,
+		
+		 navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+	});
+ 	var part4 = new Swiper(".product-part-4", {
+		loop: true,
+		speed: 1000,
+		
+		 navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+	});		
 	/*круг с цветом в конструкторе*/
 	const colorPalette = document.querySelectorAll('.model-color');
 	if(colorPalette.length > 0){

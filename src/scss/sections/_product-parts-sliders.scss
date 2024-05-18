@@ -1,0 +1,35 @@
+.product-parts{
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 10px;
+	margin-top: 20px;
+}
+.product-parts-sliders{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap:10px;
+	row-gap: 25px;
+	@media (max-width: 1364px) {
+		// grid-template-columns: 1fr 1fr;
+	}
+}
+.parts-sliders__item{
+	width: 386px;
+	@media (max-width: 1364px) {
+		// width: 49%;
+	}
+	.swiper-pagination{
+		padding-left: 10px;
+		bottom: 10px!important;
+		column-gap: 5px;
+		&-bullet-active{
+			width: 10px;
+			height: 10px;
+			background-color: #41a1f8;
+		}
+	}
+}
+.product-parts__description{
+	padding: 10px;
+	.title-25{margin-bottom: 15px;}
+}
