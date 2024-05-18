@@ -86,3 +86,9 @@ svg.caret-right, svg.caret-left{
 	height: 14px;
 	display: inline-block;
 }
+.svg-plus{
+	display: block;
+	width: 50px;
+	height: 50px;
+	flex-shrink: 0;
+}
