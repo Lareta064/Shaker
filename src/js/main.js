@@ -83,6 +83,25 @@ document.addEventListener("DOMContentLoaded", function () {
 			},
 		}
 	});
+	/*SINGLE ARTICLE PAGE  SLIDER*/
+ 	var singleArticleSlider = new Swiper(".article-slider", {
+		
+        spaceBetween: 20,
+		// autoplay:{
+		// 	delay: 5000
+		// },
+		loop: true,
+		speed: 1000,
+		// autoHeight: true,
+		 navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			 type: "fraction",
+		}
+	});
  	
 	
 	/*круг с цветом в конструкторе*/
@@ -141,6 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			},
 		},
 	});
+	/**********for custom input type="file********* */
 	'use strict';
 
 	;( function ( document, window, index )

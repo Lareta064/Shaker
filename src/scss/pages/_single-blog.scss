@@ -7,4 +7,56 @@
 		height: 100%;
 
 	}
+	@media (max-width: 767px) {
+		height: 402px;
+		border-radius: 10px
+	}
+}
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+}
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.single-article__content{
+	max-width: 660px;
+	margin: 0 auto;
+	padding-block: 45px;
+	&>* + *{
+		margin-bottom: 45px;
+	}
+	mark{
+		background-color: var(--accentYellow);
+	}
+	big{
+		font-size: 25px;
+	}
+	*+hr, hr+*{
+		margin-bottom: 25px;
+	}
+	.swiper{
+		padding-bottom: 35px;
+		.swiper-pagination{bottom: 0; font-weight: 700;}
+	}
+	.article-preview-block{
+		position: relative;
+		max-height: 370px;
+		overflow: hidden;
+		p{
+			position: absolute;
+			font-size: 25px;
+			top: 30px;
+			left: 30px;
+			z-index: 2;
+			max-width: 300px;
+			color: white;
+		}
+	}
 }

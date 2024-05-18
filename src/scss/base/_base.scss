@@ -6,6 +6,7 @@
  --text: rgba(0,0,0, 1);
  --lightText: rgba(255,254,254,1);
  --darkBg: rgba(0, 0, 0, 1);
+ --accentYellow: #fdebc5;
  --font: 'Montserrat';
  --fontMedium: 'Montserrat-Medium';
  --fontSemi: 'Montserrat-SemiBold';
@@ -120,6 +121,9 @@ select:-webkit-autofill:focus {
   padding-bottom: 25px;
   .h1{
     margin-bottom: 45px;
+    @media (max-width: 767px) {
+    margin-bottom:30px;
+    }
   }
 }
 .container{
@@ -249,7 +253,7 @@ select:-webkit-autofill:focus {
   }
 }
 .accent-bg{
-  background-color: #fdebc5!important;
+  background-color: var(--accentYellow)!important;
 }
 .section-title{
   padding-top: 90px;
