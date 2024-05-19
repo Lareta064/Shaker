@@ -1,34 +1,57 @@
 .print{
-	height: 330px;
+	// height: 330px;
 	overflow: hidden;
 	position: relative;
 	border-radius: 10px;
+	
+	justify-content: flex-end;
+	padding: 30px;
+	@media (max-width: 576px) {
+		padding: 10px;
+		padding-top: 180px;
+		flex-direction: column;
+	}
 	&:after{
 		content:'';
 		position: absolute;
 		inset: 0;
-       background: rgb(255, 255, 255);
-	  background: radial-gradient(circle, rgba(255, 255, 255, 0) 21%, rgba(57, 53, 52, 1) 78%);
+         background: rgb(255, 255, 255);
+	    background: radial-gradient(circle, rgba(255, 255, 255, 0) 21%, rgba(57, 53, 52, 1) 78%);
+		@media (max-width: 576px){display: none;}
 	}
 	&__bg{
-		height: 100%;
-		overflow: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		
 		img{
 			width: 100%;
 			min-height:100%;
 			transform: scale(1.3);
 			object-position: -150px;
+			@media (max-width: 767px) {
+			  object-position: 0;
+			  transform: scale(1.5);
+			}
 		}
 	}
 }
 .print__text{
-	width: min(530px, 100%);
-	position: absolute;
+	width: min(530px, 70%);
+	position: relative;
 	z-index: 3;
-	top: 30px;
-	right: 30px;
+	
 	border-radius: 10px;
 	padding: 30px;
 	.title-25{margin-bottom: 20px;}
 	p{margin-bottom: 20px;}
+	@media (max-width: 1023px) {
+		padding: 20px;
+	}
+	@media (max-width: 576px) {
+		padding: 20px;
+		width: 100%;
+		.btn{width: 100%;}
+	}
 }
