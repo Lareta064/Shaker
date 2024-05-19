@@ -52,9 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	var reviewSwiper = new Swiper(".review-slider", {
 		slidesPerView: 1,
         spaceBetween: 20,
-		// autoplay:{
-		// 	delay: 5000
-		// },
+		
 		loop: true,
 		speed: 1000,
 		// autoHeight: true,
@@ -67,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			 type: "fraction",
 		},
 		breakpoints: {
-		// when window width is >= 320px
+		
 			599: {
 				slidesPerView: 1.2,
 				spaceBetween: 20
@@ -262,8 +260,6 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		})
 	}
-
-
 });
 
 /* ===== constructor steps ======= */

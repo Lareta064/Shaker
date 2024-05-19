@@ -3,7 +3,7 @@ mixin blog-card(img, title, txt)
 	//=========== single card ============
 	.blog-card.img-zoom
 		.blog-card__img
-			img(src="./img/blog/"+ img +".webp", alt="img")
+			img.lazy(src="./img/blog/"+ img +".webp", alt="img")
 		
 		.blog-card__body
 			a(href="single-blog.html").title-25 !{title}

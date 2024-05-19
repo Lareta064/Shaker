@@ -30,7 +30,7 @@ block content
 						svg.svg-play
 							use(href="./img/spriteSvg.svg#svg-play")
 					.video-poster
-						img(src="./img/product-page/product-poster.webp", alt="poster")
+						img.lazy(src="./img/product-page/product-poster.webp", alt="poster")
 					//====video =======
 					video(width="100%", height="100%" )
 						source(src="video/video.mp4" type="video/mp4" )
@@ -46,6 +46,7 @@ block content
 							li Всегда в наличии
 					a(href="#contacts").btn Заказать
 		
+		include ../sections/_benefits.pug
 		include ../sections/_product-parts-sliders.pug
 		include ../sections/_print.pug
 		include ../sections/_constructor-inner-page.pug

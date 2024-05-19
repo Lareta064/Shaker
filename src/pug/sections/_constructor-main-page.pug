@@ -7,7 +7,7 @@ mixin model-card(title, imgSrc, imgW, chkd)
 		.model-card
 			span.item-info i
 			.model-card__img
-				img(src="./img/models/c0"+imgSrc+".webp", width=""+imgW  alt="img")
+				img.lazy(src="./img/models/c0"+imgSrc+".webp", width=""+imgW  alt="img")
 			p.title-15 Модель С0#{imgSrc} —&nbsp;#{title}00&nbsp;мл
 
 
@@ -56,10 +56,10 @@ section.constructor.white-bg.mt-30
 			.constructor-column-center
 				//========= Images Block ========
 				.constructor-images
-					img.model-base(src="./img/c01/C01_base.webp", width="270" alt="c01")
-					img.model-body(src="./img/c01/c01_body.webp", width="270" alt="c01")
-					img.model-cap(src="./img/c01/c01_cap_yellow.webp", width="270" alt="c01")
-					img.model-snap(src="./img/c01/c01_snap.webp", width="270" alt="c01")
+					img.model-base.lazy(src="./img/c01/C01_base.webp", width="270" alt="c01")
+					img.model-body.lazy(src="./img/c01/c01_body.webp", width="270" alt="c01")
+					img.model-cap.lazy(src="./img/c01/c01_cap_yellow.webp", width="270" alt="c01")
+					img.model-snap.lazy(src="./img/c01/c01_snap.webp", width="270" alt="c01")
 				
 				//======= current model name (visible in mob version) =====
 				p.current-model-name С01 <br>600 мл
