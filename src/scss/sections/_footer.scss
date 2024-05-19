@@ -61,17 +61,18 @@
 	}
 	@media (max-width:991px) {
 		
-		&-content, &-menu{
-			flex-direction: column;
-			row-gap: 40px;
-		}
-		&-menu-wrapper{
-			.title-15{
-				margin-bottom: 16px;
+		// &-content, &-menu{
+		// 	flex-direction: column;
+		// 	row-gap: 40px;
+		// }
+		&-menu-wrapper {display: none;}
+		// &-menu-wrapper{
+		// 	.title-15{
+		// 		margin-bottom: 16px;
 
-			}
-		}
-		&-menu{row-gap: 7px}
+		// 	}
+		// }
+		// &-menu{row-gap: 7px}
 	}
 	@media (max-width: 767px) {
 	    text-align: center;
