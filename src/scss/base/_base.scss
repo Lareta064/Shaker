@@ -303,6 +303,11 @@ select:-webkit-autofill:focus {
     display: none;
   }
 }
+@keyframes slowOpacity {
+  to {
+    opacity: 1;
+  }
+}
 .bottom-navigation{
   .swiper-pagination {
     bottom: 12px;
