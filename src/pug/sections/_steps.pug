@@ -27,13 +27,13 @@ section.constructor.white-bg.mt-30
 	.container
 		.constructor-block
 			.constructor-header.d-flex-y
-				h3.title-25.active(js-step-title) Шаг 1
-				h3.title-25(js-step-title) Шаг 2
+				h3.title-25.active(data-step-title) Шаг 1
+				h3.title-25(data-step-title) Шаг 2
 				
 			//======= STEPS CONTENT =====
 			.constructor-body
 				//======= STEP 1 =====
-				.constructor-frame.active(js-step-content)
+				.constructor-frame.active(data-step-content)
 					p.title-20.mb-20 Выберите модель
 					.models-cards
 						+model-card(6, 1, 92, 'chkd')
@@ -47,7 +47,7 @@ section.constructor.white-bg.mt-30
 							svg.angle-right
 								use(href="./img/spriteSvg.svg#angle-right")
 				//======= STEP 2 =====
-				.constructor-frame(js-step-content)
+				.constructor-frame(data-step-content)
 					.constructor-frame__row.d-flex
 						p.title-20 Выберите цвета деталей<br> и сделайте заказ
 						.constructor-form.d-flex

@@ -294,9 +294,13 @@ select:-webkit-autofill:focus {
 
   }
 }
-@keyframes slowOpacity{
-  to{
-    opacity: 1;
+.scroll-y {
+  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
 .bottom-navigation{

@@ -267,8 +267,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* ===== constructor steps ======= */
-	const constructorStepTitles = document.querySelectorAll('[js-step-title]');
-	const constructorStepContents = document.querySelectorAll('[js-step-content]');
+	const constructorStepTitles = document.querySelectorAll('[data-step-title]');
+	const constructorStepContents = document.querySelectorAll('[data-step-content]');
 function viewConsructorNextStep(){
 
 	
