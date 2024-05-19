@@ -64,3 +64,10 @@
 		transform: rotate(-90deg);
 	}
 }
+.btn.btn--outline{
+	background-color: transparent;
+	&:hover{
+		opacity: .5;
+		color: #000000;
+	}
+}

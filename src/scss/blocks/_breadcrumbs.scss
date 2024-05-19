@@ -20,6 +20,9 @@
 
 			}
 		}
+		@media (max-width: 767px) {
+		flex-wrap:wrap; row-gap:5px;
+		}
 	}
 }
 .breadcrumbs + *{

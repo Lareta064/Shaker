@@ -32,7 +32,7 @@ section.constructor.white-bg.mt-30
 			
 			
 		//======= STEP 1 =====
-		.constructor-models(js-step-content)
+		.constructor-models.active(js-step-content)
 			p.title-20.mb-20 Выберите модель
 			.models-cards
 				+model-card(6, 1, 92, 'chkd')
@@ -46,7 +46,7 @@ section.constructor.white-bg.mt-30
 					svg.angle-right
 						use(href="./img/spriteSvg.svg#angle-right")
 		//======= STEP 2 =====
-		.constructor-display.active(js-step-content)
+		.constructor-display(js-step-content)
 			//=======LEFT COLUMN ======
 			.constructor-column-left
 				h3.title-20.mb-20 Выберите цвета деталей<br> и сделайте заказ
@@ -56,7 +56,7 @@ section.constructor.white-bg.mt-30
 			.constructor-column-center
 				//========= Images Block ========
 				.constructor-images
-					img.model-base(src="./img/c01/c01_base.webp", width="270" alt="c01")
+					img.model-base(src="./img/c01/C01_base.webp", width="270" alt="c01")
 					img.model-body(src="./img/c01/c01_body.webp", width="270" alt="c01")
 					img.model-cap(src="./img/c01/c01_cap_yellow.webp", width="270" alt="c01")
 					img.model-snap(src="./img/c01/c01_snap.webp", width="270" alt="c01")

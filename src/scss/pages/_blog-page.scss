@@ -15,4 +15,11 @@
 			.btn{height: 37px;}
 		}
 	}
+	@media (max-width: 1023px) {
+		grid-template-columns: 1fr 1fr;
+	}
+	@media (max-width: 599px) {
+		grid-template-columns: 1fr;
+		.blog-card{margin: 0 auto;}
+	}
 }
