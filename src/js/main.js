@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
+	const bodyEl = document.body;
+	setTimeout(()=>{
+		 bodyEl.setAttribute('style', 'opacity:1')
+	},200)
 	$('.lazy').Lazy();
 	/* ======  menu icon click ====== */
 	const menuToggle = document.querySelector('#menu-toggle');
 	const mobileMenu = document.querySelector('#mobile-menu');
-	const bodyEl = document.body;
+	
 
 	if (menuToggle) {
 
