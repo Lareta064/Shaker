@@ -19,6 +19,12 @@
 		width: 340px;
 		flex-shrink: 0;
 	}
+	h2{
+		font-size: 20px;
+		margin-bottom: 20px;
+		font-family: var(--fontMedium);
+		font-weight: 500;
+	}
 	@media (max-width: 1023px) {
 	height: auto;
 	min-height: 430px;

@@ -121,7 +121,7 @@ select:-webkit-autofill:focus {
 .inner-page{
   padding-top: 25px;
   padding-bottom: 50px;
-  .h1{
+  h1{
     margin-bottom: 45px;
     @media (max-width: 767px) {
     margin-bottom:30px;
@@ -163,7 +163,7 @@ select:-webkit-autofill:focus {
   &.active .online-state__dot{background-color: #00ff2e;}
 }
 /*========== TYPOGRAPHY ==========*/
-.h1, .h2{
+h1, h2{
   font-size: 40px;
   font-family: var(--fontSemi);
   font-weight: 600;

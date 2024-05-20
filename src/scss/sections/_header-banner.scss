@@ -18,18 +18,18 @@
 }
 .header-title{
 	padding-block: 45px 95px;
-	.h1{width: min( 720px, 80%);}
+	h1{width: min( 720px, 80%);}
 
 	@media (max-width: 767px) {
 	  padding-left: 10px;
-	  .h1 {width: min(480px, 95%);}
+	  h1 {width: min(480px, 95%);}
 	}
 }
 .shaker-models-wrapper{
 	padding-block: 20px;
 	background-color: #fff;
 	border-radius: 10px;
-	.txt-bold{
+	h2{
 		font-size: 15px;
 		font-family: var(--fontBold);
 		margin-right: 50px;
@@ -40,7 +40,7 @@
 		order:3;
 		.shaker-models{display: block;}
 		
-		.txt-bold{
+		h2{
 			margin-right: 0;
 			padding-top: 0;
 			margin-bottom: 15px;
