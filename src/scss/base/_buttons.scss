@@ -32,6 +32,11 @@
 	}
 
 }
+.btn{
+	@media(min-width:1200px){
+		width: 200px;
+	}
+}
 .btn-arrow{
 	height: auto;
 	border: 0;
