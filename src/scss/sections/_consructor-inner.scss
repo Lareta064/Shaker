@@ -21,9 +21,13 @@
 	}
 	h2{
 		font-size: 20px;
-		margin-bottom: 20px;
+		margin-bottom: 14px;
 		font-family: var(--fontMedium);
 		font-weight: 500;
+	}
+	.btn{
+		min-width: unset;padding-inline: 30px;
+		
 	}
 	@media (max-width: 1023px) {
 	height: auto;
@@ -39,7 +43,7 @@
 }
 .constructor-header {
 	column-gap: 25px;
-	margin-bottom: 6px;
+	margin-bottom: 10px;
 
 	.title-25 {
 		opacity: 0.3;
