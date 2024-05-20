@@ -109,12 +109,16 @@
 	transform: translateX(100%);
 	transition: .3s; 
    
-	
+	.scroll-y{
+		background-color: var(--darkBg);
+		width: min(240px, 100%);
+		margin-left: auto;
+	}
 	&__content{
 		background-color:var(--darkBg);
 		padding: 20px 30px;
-		width: min(240px, 100%);
-		margin-left: auto;
+		// width: min(240px, 100%);
+		
 		&>*+*{margin-top: 45px}
 		
 	}
