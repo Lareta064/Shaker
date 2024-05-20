@@ -27,10 +27,12 @@
 	a:hover{
 		color: #b1b1b1;
 	}
+	.btn{width: 200px;}
 	.btn svg{display: none;}
 	@media (max-width: 1023px){
 		.btn{
 			height: auto;
+			width: auto;
 			border: 0;
 			padding-inline: 0;
 			svg{display: block;}

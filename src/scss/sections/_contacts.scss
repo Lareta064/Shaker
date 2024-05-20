@@ -1,15 +1,15 @@
 .contacts{
 	background-color: #fff;
-	padding: 30px 50px;
-	.container {
-		width: min(1120px, 100%);
-	}
+	padding: 28px 50px;
+	// .container {
+	// 	width: min(1120px, 100%);
+	// }
 	@media (max-width: 1023px) {
 		padding: 30px 20px;
 	}
 	&-content{
 		display: flex;
-		column-gap: 55px;
+		column-gap: 69px;
 		@media (max-width: 1199px) {gap: 30px;}
 		@media (max-width: 767px) {
 		flex-direction: column;

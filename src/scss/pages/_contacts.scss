@@ -1,8 +1,11 @@
+.contacts-main .container{
+	width: min(1120px, 100%);
+}
 .contacts-row{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 15px;
-	h2{text-align: center;}
+	h2{line-height: 1; margin-top: -12px;}
 	@media (max-width: 767px) {
 	gap: 10px;
 	}
@@ -13,6 +16,7 @@
 		padding: 30px;
 		border-radius: 10px;
 		overflow:hidden;
+		.contacts-links a{padding-block: 0;}
 		@media (max-width: 767px) {
 		padding: 20px;
 		}
@@ -34,6 +38,7 @@
 		}
 		.contacts-opening{
 			flex-shrink: 0;
+			.online-state{margin-top: 11px;}
 		}
 		
 		address{
@@ -45,6 +50,8 @@
 	}
 	.how-working {
 		min-height: 470px;
+		padding: 24px;
+		padding-left: 30px;
 		.title-25 {
 			margin-bottom: 25px;
 		}
@@ -73,7 +80,7 @@
 .map{
 	width: 100%;
 	display: block;
-	height: 470px;
+	height: 485px;
 	@media (max-width: 767px) {
 		height: 300px;
 	}

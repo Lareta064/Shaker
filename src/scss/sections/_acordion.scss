@@ -8,7 +8,7 @@
 	.acor-body {
 
 		height: 0;
-		
+		color: #010101;
 		box-sizing: border-box;
 		transition: color 0.3s, padding 0.3s;
 		overflow: hidden;
@@ -28,8 +28,9 @@
 		position: relative;
 		cursor: pointer;
 		display: block;
-		padding-block: 7px 10px;
+		padding-block: 7px 16px;
 		padding-right: 25px;
+		font-family: var(--fontBold);
 		width: 100%;
 		z-index: 5;
 		transition: color .3s;
@@ -44,12 +45,12 @@
 	 label:before {
 		content: '';
 		position: absolute;
-		right: 0;
-		top: 7px;
-		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3e%3c!--!Font Awesome Free 6.5.2 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3e%3cpath fill='%23b1b1b1' d='M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z'/%3e%3c/svg%3e");
+		right: 12px;
+		top: 6px;
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='12px' height='11px'%3e%3cpath fill-rule='evenodd' fill='rgb(177, 177, 177)' d='M6.904,9.977 C6.521,10.655 5.545,10.655 5.162,9.977 L0.668,2.015 C0.292,1.348 0.773,0.523 1.539,0.523 L10.527,0.523 C11.292,0.523 11.774,1.348 11.398,2.015 L6.904,9.977 Z'/%3e%3c/svg%3e");
 		background-repeat: no-repeat;
 		background-position: center;
-		background-size: 12px 16px;
+		background-size: 12px 11px;
 		width: 20px;
 		height: 20px;
 
@@ -57,10 +58,10 @@
 
 
 	 input:checked+label:before {
-		width: 20px;
-		height: 20px;
+		width: 24px;
+		height: 24px;
 		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3e%3c!--!Font Awesome Free 6.5.2 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3e%3cpath fill='%23b1b1b1' d='M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z'/%3e%3c/svg%3e");
-		background-size: 14px 14px;
+		background-size: 24px 24px;
 		background-position: center;
 		
 	}
@@ -68,7 +69,7 @@
 	 input:checked+label+.acor-body {
 		height: auto;
 
-		padding: 10px 30px 20px 0;
+		padding: 14px 10px 22px 0;
 
 
 	}
