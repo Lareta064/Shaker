@@ -14,7 +14,7 @@
 }
 .video {
 	position: relative;
-	padding-bottom: 56.25%;
+	padding-bottom: 53.25%;
 	padding-top: 25px;
 	height: 0;
 	
@@ -30,8 +30,13 @@
 	max-width: 760px;
 	padding-left: 100px;
 	padding-block: 45px;
-	&>* + *{
-		margin-bottom: 45px;
+	h2{
+		font-size: 25px;
+		font-family: var(--fontBold);
+		
+	}
+	&>*:not(:last-child) {
+		margin-bottom: 43px;
 	}
 	mark{
 		background-color: var(--accentYellow);
@@ -39,11 +44,18 @@
 	big{
 		font-size: 25px;
 	}
-	*+hr, hr+*{
-		margin-bottom: 25px;
+	.border-block{
+		padding-block:18px;
+		border-top: 1px solid var(--text);
+		border-bottom: 1px solid var(--text);
+		p{
+			font-size: 25px;
+		}
 	}
+	.mb-50{margin-bottom: 50px;}
+	.mb-18{margin-bottom: 18px;}
 	.swiper{
-		padding-bottom: 35px;
+		padding-bottom: 27px;
 		.swiper-pagination{bottom: 0; font-weight: 700;}
 		.swiper-slide{
 			width: 100%;
@@ -54,10 +66,11 @@
 				min-height: 370px;
 			}
 		}
+		
 	}
 	.article-preview-block{
 		position: relative;
-		max-height: 370px;
+		height: 370px;
 		overflow: hidden;
 		p{
 			position: absolute;
@@ -69,22 +82,19 @@
 			color: white;
 		}
 	}
-	p>img{
-		max-height: 280px;
-		overflow: hidden;
-		
-	}
-	ol li+li{margin-top: 15px;}
+	
+	ol li+li{margin-top: 18px;}
 	ul{
 		margin-bottom: 45px;
 		padding-left:10px;
+		
 		
 		li::marker{
 			content:'\2013';
 			
 		}
 		li{ padding-left: 5px;}
-		li +li{margin-top: 15px;}
+		li +li{margin-top: 18px;}
 	}
 	@media (max-width: 1199px) {
 	padding-left: 0;

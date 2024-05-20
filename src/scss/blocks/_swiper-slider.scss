@@ -26,6 +26,13 @@
 		color: white;
 	}
 }
+.swiper-button-prev {
+	left: 18px
+}
+
+.swiper-button-next {
+	right: 18px
+}
 .swiper-pagination {
 	display: flex;
 	align-items: center;

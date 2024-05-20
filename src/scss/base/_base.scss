@@ -263,6 +263,11 @@ h1, h2{
 .accent-bg{
   background-color: var(--accentYellow)!important;
 }
+.accent-text{
+  border-radius: 10px;
+  padding: 27px;
+  background-color: var(--accentYellow);
+}
 .section-title{
   padding-top: 90px;
   padding-bottom: 50px;
