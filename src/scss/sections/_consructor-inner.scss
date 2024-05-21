@@ -250,7 +250,7 @@
 
 .constructor.constructor-minimize{
 	.constructor-column-center,
-	.constructor-descriptiont{margin-top: 0;}
+	.constructor-descriptiont-wrapper{margin-top: 0;}
 	.constructor-form__options{
 		display: flex;
 		flex-direction:column ;
@@ -295,7 +295,7 @@
 	}
 }
 
-.constructor-column-center,.constructor-descriptiont{
+.constructor-column-center,.constructor-descriptiont-wrapper{
 	margin-top: -30px;
 	position: relative;
 	
@@ -309,7 +309,7 @@
 			padding-bottom: 30px;
 		}
 }
-.constructor-descriptiont{
+.constructor-descriptiont-wrapper{
 	display: flex;
 	flex-direction: column;
 	&>*{width: 100%;}
