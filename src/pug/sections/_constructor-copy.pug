@@ -32,7 +32,7 @@ section.constructor.white-bg
 			
 			
 		//======= STEP 1 =====
-		.constructor-models(data-step-content)
+		.constructor-models.active(data-step-content)
 			h2 Выберите модель
 			.models-cards.constructor-nav
 				+model-card(6, 1, 92, 'chkd')
@@ -46,7 +46,7 @@ section.constructor.white-bg
 					svg.angle-right
 						use(href="./img/spriteSvg.svg#angle-right")
 		//======= STEP 2 =====
-		.constructor-display.constructor-for.active(data-step-content)
+		.constructor-display.constructor-for(data-step-content)
 			//=======LEFT COLUMN ======
 			.constructor-column-left
 				h2 Выберите цвета деталей<br> и сделайте заказ
@@ -65,7 +65,7 @@ section.constructor.white-bg
 					img#constructor_colors_bottle.imgs_replace.model-body.lazy(src="./img/c01/C01_body_white.webp", width="270" alt="body")
 
 					//====== изображение для петли ===========
-					//- img#constructor_colors_loop.imgs_replace.model-loop.lazy(src="./img/c01/C03_loop_white_white_new_02.png", alt="loop")
+					//img#constructor_colors_loop.imgs_replace.model-loop.lazy(src="./img/c01/C03_loop_white_white_new_02.png", alt="loop")
 				
 				//======= current model name (visible in mob version) =====
 				.code

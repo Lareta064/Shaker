@@ -1,3 +1,6 @@
+.inner-page.inner-page--contacts{
+	@media(min-width:1200px){padding-top: 40px;}
+}
 .contacts-main .container{
 	width: min(1120px, 100%);
 }
