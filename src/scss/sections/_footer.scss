@@ -1,7 +1,10 @@
 .footer{
 	background-color: var(--darkBg);
-	padding-block: 25px 45px;
+	padding-block: 32px 45px;
 	color: var(--lightText);
+	.container{
+	 width: min(1260px, 100%);
+	}
 	.logo{
 		padding-right: 0;
 		color:var(--lightText);
@@ -24,7 +27,9 @@
 
 	&-content{
 		display: flex;
-		column-gap: 58px;
+		column-gap: 220px;
+		@media(max-width:1364px){column-gap: 60px;}
+		
 	}
 	&-logo{
 		display: flex;
@@ -32,16 +37,27 @@
 	}
 	&-menu-wrapper{
 		flex-grow:1;
+		@media(max-width:1364px) {
+			
+			margin-left: auto;
+			flex-grow: 0;
+	
+		}
 	}
 	&-menu{
 		display: flex;
-		justify-content: space-between;
+		column-gap: 130px;
+		@media(max-width:1364px) {
+				column-gap: 50px;
+			
+				
+			}
 		nav{
 			a{
 				display: block;
 				width: fit-content;
 				position: relative;
-				padding-block: 7px;
+				padding-block: 5px;
 				&:after{
 					content: '';
 					height: 1px;
