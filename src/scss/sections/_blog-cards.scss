@@ -43,7 +43,7 @@
 	}
 	@media (max-width: 767px) {
 		&:last-child{margin-right: 10px;}
-		width: 280px;
+		max-width: 330px;
 		.title-25{font-size: 15px;}
 		&__body{padding: 16px;}
 		
@@ -52,9 +52,13 @@
 		width: 100%;
 		aspect-ratio: 9 / 5;
 		overflow: hidden;
+
 		img{
 			width: 100%;
 			height: 100%;
+		}
+		@media (max-width: 374px) {
+		height: 165px;
 		}
 
 	}
@@ -78,6 +82,7 @@
 			overflow: hidden;
 			@media (max-width: 1023px) {
 				-webkit-line-clamp: 3;
+				height: 54px;
 			}
 		}
 
@@ -90,7 +95,8 @@
 		margin-top: auto;
 		padding-top: 40px;
 		@media (max-width: 767px) {
-		.btn + span{display: none;}
+		&> span{display: none;}
 		}
 	}
+	@media (max-width: 359px) {max-width: 280px;}
 }
