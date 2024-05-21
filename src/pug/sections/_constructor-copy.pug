@@ -13,11 +13,11 @@ mixin model-card(title, imgSrc, imgW, chkd)
 
 mixin model-color(bgColor, svgColor, chkd)
 	//======== один элемент =========
-	label.special-label.model-color&attributes(attributes)
+	label.special-label.model-color.radio&attributes(attributes)
 		if chkd
-			input(type="radio" name="model-color" checked)
+			input(type="radio" name="colors_cap" checked)
 		else
-			input(type="radio" name="model-color")
+			input(type="radio" name="colors_cap1")
 		//===== цвет, прописанный в background- левая половинка круга, а цвет, прописанный в color- правая половинка круга
 		.model-color__item(style="background: "+ bgColor+ "; color:"+ svgColor+ " ;")
 			svg
@@ -110,7 +110,7 @@ section.constructor.constructor--copy.white-bg.mt-20
 						
 						//======== Палитра цветов =====
 						.scroll-horizontal
-							.colors-palette
+							.group-radio.color-radio.colors-palette
 								+model-color('white', 'white', 'chkd')(class="model-color--current")
 								+model-color('#f6e13c', 'white')
 								+model-color('#f99827', 'white')

@@ -151,13 +151,14 @@
 
 .colors-palette-block {
 	position: relative;
-	
+	min-height: 75px;
 	.txt-bold {
 		margin-bottom: 16px;
 	}
 	@media (max-width: 767px) {
+		.constructor-description-absolute{
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column-reverse;}
 	}
 
 }
@@ -169,7 +170,7 @@
 	display: none;
 	&.active{display: block;}
 }
-.colors-palette {
+.colors-palette, .group-radio {
 	display: flex;
 	gap: 20px;
 	flex-wrap: wrap;
