@@ -114,8 +114,10 @@ select:-webkit-autofill:focus {
   width: min(1260px, 100%);
   margin-inline: auto;
   padding-inline: 30px;
+  padding-bottom: 26px;
   @media (max-width: 767px) {
       padding-inline: 10px;
+     
   }
 }
 .inner-page{

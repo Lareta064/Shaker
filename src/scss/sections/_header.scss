@@ -7,7 +7,7 @@
 	&-content{
 		
 		height: 78px;
-		&>*{padding-top: 15px;}
+		&>*{padding-top: 20px;}
 		&>*+* {border-left: 1px solid rgb(61, 61, 61);}
 			
 		
@@ -80,7 +80,7 @@
 		display: block;
 		font-size: remy(15);
 		color: var(--lightText);
-		margin-top: 7px;
+		margin-top: 4px;
 		white-space: nowrap;
 		@media (max-width:767px) {
 			display: none;

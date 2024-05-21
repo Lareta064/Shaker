@@ -8,7 +8,7 @@
 .review-card{
 	border-radius: 10px;
 	background-color: #fff;
-	padding: 30px 50px;
+	padding: 30px 50px 50px;
 	display: flex;
 	column-gap:45px;
 	font-family: var(--fontMedium);
@@ -50,7 +50,7 @@
 	&__text{
 		flex-grow: 1;
 		padding-top: 45px;
-		.txt-bold{margin-bottom: 8px;}
+		.txt-bold{margin-bottom: 14px;}
 		@media (max-width: 1199px) {
 			padding-top: 0;
 		}

@@ -27,11 +27,21 @@
 	}
 }
 .swiper-button-prev {
-	left: 18px
+	left: 18px;
+	&.prev-small{
+		width: 30px;
+		height: 30px;
+		left:8px;
+	}
 }
 
 .swiper-button-next {
-	right: 18px
+	right: 18px;
+	&.next-small{
+		width: 30px;
+		height: 30px;
+		right:8px;
+	}
 }
 .swiper-pagination {
 	display: flex;

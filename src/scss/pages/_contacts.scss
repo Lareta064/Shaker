@@ -49,11 +49,14 @@
 		
 	}
 	.how-working {
-		min-height: 470px;
+		min-height: 485px;
 		padding: 24px;
 		padding-left: 30px;
 		.title-25 {
 			margin-bottom: 25px;
+		}
+		@media (max-width: 1023px) {
+		min-height: unset;
 		}
 	}
 	@media (max-width: 1023px) {
