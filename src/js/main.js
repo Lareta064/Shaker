@@ -168,35 +168,36 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
 	// VIDEO
-	const videoContent = document.querySelectorAll('.video-preview-item');
-	if (videoContent.length>0) {
+	const videoPosters = document.querySelectorAll('[data-video-btn]');
+	const videoModals = document.querySelectorAll('[data-modal]');
+
+	if (videoPosters.length>0) {
 
 		
-		for(let clip of videoContent){
-			const videoBtn = clip.querySelector('.play-icon');
-			const videoClip = clip.querySelector('video');
-			const videoPoster = clip.querySelector('.video-poster');
-			
+		for(let item of videoPosters){
 
-			clip.addEventListener('click', function () {
-				if (videoClip.paused) {
-					videoClip.play();
-					videoBtn.style.opacity = "0";
-					videoPoster.style.opacity = "0";
-					
-				} else {
-					videoClip.pause();
-					videoBtn.style.opacity = "1";
-					videoPoster.style.opacity = "1";
-					
+			item.addEventListener('click', function () {
+				const itemDataVal = item.getAttribute('data-video-btn');
+				for(let videoModal of videoModals){
+					const videoModalData = videoModal.getAttribute('data-modal');
+					console.log(itemDataVal);
+					console.log(videoModalData);
+
+					if(videoModalData == itemDataVal){
+						console.log('123');
+						videoModal.classList.add('active');
+					}
 				}
-				//videoClip.play();
 			});
-			clip.addEventListener("ended", function () {
-				videoClip.pause();
-				videoBtn.style.opacity = "1";
-				videoPoster.style.opacity = "1";
-				
+			
+		}
+
+		for(let videoModal of videoModals){
+			const modalClose = videoModal.querySelector('.btn-close');
+			videoModal.addEventListener('click', (e)=>{
+				if(e.target == modalClose || e.target == e.currentTarget){
+					videoModal.classList.remove('active');
+				}
 			});
 		}
 	}

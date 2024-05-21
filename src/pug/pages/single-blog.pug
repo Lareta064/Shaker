@@ -92,8 +92,14 @@ block content
 				.accent-text
 					p Каждый месяц мы выбираем один цвет стакана с любой крышкой и клапаном и делаем на него скидку. Акция распространяется на модели С01 и С02. Больше никаких условий, просто выберите крышку и клапан и получите свой уникальный шейкер со скидкой!
 
-				.video
-					
+				.video-preview-item(data-video-btn="video1")
+					//===== play btm =====
+					// button.play-icon
+					//	  svg.svg-play
+					//		  use(href="./img/spriteSvg.svg#svg-play")
+					.video-poster
+						img.lazy(src="./img/article-page/article-poster.webp", alt="poster")
+
 					iframe(width="100%", height="100%", src="https://www.youtube.com/embed/9YpM5vwYMyU?si=iCuuVvf5FQhhRJll", title="YouTube video player", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", referrerpolicy="strict-origin-when-cross-origin", allowfullscreen)
 
 				p #[big Описание про печать готовится, видео монтируется. Уже можно посмотреть видео про все производство, #[mark про печать там тоже есть:]]
@@ -115,5 +121,13 @@ block content
 
 	include ../sections/_contacts.pug
 	include ../sections/_footer.pug
+	//===================VIDEO MODAL ==============
+	.modal-frame(data-modal="video1")
+		.modal-frame__content
+			//=======close btn ======
+			button.btn-close +
+			
+			.video
+				iframe(width="100%", height="100%", src="https://www.youtube.com/embed/9YpM5vwYMyU?si=iCuuVvf5FQhhRJll", title="YouTube video player", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", referrerpolicy="strict-origin-when-cross-origin", allowfullscreen)
 block variables
 	-var title = "Shaker";

@@ -23,12 +23,8 @@
 		border-radius: 10px
 	}
 }
-.video {
-	position: relative;
-	padding-bottom: 53.25%;
-	padding-top: 25px;
-	height: 0;
-	
+.video-preview-item {
+	max-height: 370px;
 }
 .video iframe {
 	position: absolute;
