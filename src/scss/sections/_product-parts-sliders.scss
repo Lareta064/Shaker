@@ -13,6 +13,7 @@
 	row-gap: 25px;
 	@media (max-width: 767px) {
 		grid-template-columns: 1fr 1fr;
+		row-gap: 18px;
 	}
 	@media (max-width: 576px) {
 		grid-template-columns: 1fr;
@@ -26,6 +27,9 @@
 		img{
 			width: 100%;
 			aspect-ratio: 1;
+			@media (max-width: 767px) {
+			height: 300px;
+			}
 		}
 	}
 	
@@ -58,5 +62,5 @@
 }
 .product-parts__description{
 	padding: 3px 10px;
-	.title-25{margin-bottom: 6px; font-family: var(--fontBold);}
+	.title-25{margin-bottom: 8px; font-family: var(--fontBold);}
 }

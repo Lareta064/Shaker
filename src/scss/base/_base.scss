@@ -126,7 +126,7 @@ select:-webkit-autofill:focus {
   h1{
     margin-bottom: 38px;
     @media (max-width: 767px) {
-    margin-bottom:30px;
+    margin-bottom:30px;padding-top:12px; padding-bottom: 26px;
     }
   }
 }
