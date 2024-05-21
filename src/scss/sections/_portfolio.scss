@@ -3,6 +3,13 @@
 	&__header{
 		justify-content: space-between;
 		margin-bottom: 24px;
+		@media (max-width: 767px) {
+		  margin-bottom: 10px;
+		  padding-left: 10px;
+		}
+	}
+	@media (max-width: 767px) {
+	padding: 18px 10px 10px;
 	}
 	&-wrapper{
 		display: grid;

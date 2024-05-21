@@ -40,6 +40,8 @@
 		margin-left: -10px;
 		margin-right: -10px;
 		padding-inline: 10px;
+		margin-top: 30px;
+		h2{font-size: 15px;}
 	}
 }
 .constructor-header {
@@ -54,7 +56,9 @@
 	.title-25.active {
 		opacity: 1;
 	}
-
+	@media (max-width: 767px) {
+	margin-bottom: 3px;
+	}
 }
 .current-model-name {
 	position: absolute;

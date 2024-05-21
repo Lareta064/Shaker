@@ -1,10 +1,10 @@
-// .blog{
-// 	padding-bottom: 40px;
+.blog{
 	
-// 	@media (max-width: 767px) {
-// 	padding-bottom: 30px;
-// 	}
-// }
+	
+	@media (max-width: 767px) {
+	h2{font-size: 35px; padding-left: 10px;}
+	}
+}
 .blog-cards{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -89,5 +89,8 @@
 		flex-shrink: 0;
 		margin-top: auto;
 		padding-top: 40px;
+		@media (max-width: 767px) {
+		.btn + span{display: none;}
+		}
 	}
 }
