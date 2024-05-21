@@ -1,5 +1,4 @@
 mixin model-card(title, imgSrc, imgW, chkd)
-	//======= single model =======
 	label.model-card-label.special-label
 		if chkd
 			input(type="radio" name="shaker-model" checked)
@@ -9,20 +8,9 @@ mixin model-card(title, imgSrc, imgW, chkd)
 			span.item-info i
 			.model-card__img
 				img.lazy(src="./img/models/c0"+imgSrc+".webp", width=""+imgW  alt="img")
-			p.title-15 Модель С0#{imgSrc} —&nbsp;#{title}00 мл
+			p.title-15 Модель С0#{imgSrc} —&nbsp;#{title}00&nbsp;мл
 
-mixin model-card-mini(title, imgSrc, imgW, chkd)
-	//======= single model =======
-	label.model-card-label.special-label
-		if chkd
-			input(type="radio" name="shaker-model-mini" checked)
-		else
-			input(type="radio" name="shaker-model-mini")
-		.model-card.model-card--mini
-			span.item-info i
-			.model-card__img
-				img.lazy(src="./img/models/c0"+imgSrc+".webp", width=""+imgW  alt="img")
-			p.title-15 С0#{imgSrc} —&nbsp;#{title}00 мл
+
 mixin model-color(bgColor, svgColor, chkd)
 	//======== один элемент =========
 	label.special-label.model-color&attributes(attributes)
@@ -35,29 +23,49 @@ mixin model-color(bgColor, svgColor, chkd)
 			svg
 				use(href="./img/spriteSvg.svg#color-part")
 //============= Consructor steps =============
-section.constructor.constructor-minimize.white-bg.mt-10
+section.constructor.constructor--copy.white-bg.mt-20
 	.container
-		.constructor-display.active
+		//====== SECTION TITLE =======
+		.constructor-header.d-flex-y
+			h3.title-25.active(data-step-title) Шаг 1
+			h3.title-25(data-step-title) Шаг 2
 			
+			
+		//======= STEP 1 =====
+		.constructor-models(data-step-content)
+			h2 Выберите модель
+			.models-cards.constructor-nav
+				+model-card(6, 1, 92, 'chkd')
+				+model-card(4, 2, 87)
+				+model-card(6, 3, 92)
+				+model-card(4, 4, 87)
+			
+			.constructor-frame__button.mt-20
+				button.btn(type="button" onclick="viewConsructorNextStep()")
+					span Выбрать цвет
+					svg.angle-right
+						use(href="./img/spriteSvg.svg#angle-right")
+		//======= STEP 2 =====
+		.constructor-display.constructor-for.active(data-step-content)
 			//=======LEFT COLUMN ======
 			.constructor-column-left
-				h3.title-20.mb-20 Собрать свой шейкер
-				//=======  MODELS CARDS =======
-				.models-cards.models-cards--wrap
-					+model-card-mini(6, 1, 92, 'chkd')
-					+model-card-mini(4, 2, 87)
-					+model-card-mini(6, 3, 92)
-					+model-card-mini(4, 4, 87)
+				h2 Выберите цвета деталей<br> и сделайте заказ
 			
 			
 			//======= CENTER COLUMN ======
-			.constructor-column-center
+			.constructor-column-center.constructor-preview
 				//========= Images Block ========
-				.constructor-images
-					img.model-base.lazy(src="./img/c01/base.webp", width="270" alt="c01")
-					img.model-body.lazy(src="./img/c01/body.webp", width="270" alt="c01")
-					img.model-cap.lazy(src="./img/c01/cap_yellow.webp", width="270" alt="c01")
-					img.model-snap.lazy(src="./img/c01/snap.webp", width="270" alt="c01")
+				.constructor-images.imgs
+					img#constructor_model.model-base.lazy(src="./img/c01/C01_def3.webp", width="270" alt="model")
+
+					img#constructor_colors_cap.imgs_replace.model-cap.lazy(src="./img/c01/C01_cap_white3.webp", width="270" alt="cap")
+					
+					img#constructor_colors_bottleneck.imgs_replace.model-snap.lazy(src="./img/c01/C01_snap_white.webp", width="270" alt="snap")
+
+					img#constructor_colors_bottle.imgs_replace.model-body.lazy(src="./img/c01/C01_body_white.webp", width="270" alt="body")
+
+					//====== изображение для петли ===========
+					//- img#constructor_colors_loop.imgs_replace.model-loop.lazy(src="./img/c01/C03_loop_white_white_new_02.png", alt="loop")
 				
 				//======= current model name (visible in mob version) =====
 				p.current-model-name С01 <br>600 мл
@@ -65,27 +73,27 @@ section.constructor.constructor-minimize.white-bg.mt-10
 			//======= Right COLUMN ======
 			.constructor-descriptiont
 				//====== PART ITEMS ===============
-				.model-parts
+				.model-parts.adds
 					//======== single item =======
-					label.model-part.special-label
+					label.model-part.special-label.add.add3(data-target="c_bottle")
 						input(type="radio" name="model-part" checked)
 						span.btn-slim Клапан
 				
 					//======== single item =======
-					label.model-part.special-label
+					label.model-part.special-label.add.add1(data-target="c_loop")
 						input(type="radio" name="model-part")
 						span.btn-slim Петля						
 					//======== single item =======
-					label.model-part.special-label
+					label.model-part.special-label.add.add.add2(data-target="c_caps")
 						input(type="radio" name="model-part")
 						span.btn-slim Крышка
 				
 					//======== single item =======
-					label.model-part.special-label
+					label.model-part.special-label.add.add4(data-target="c_bottle")
 						input(type="radio" name="model-part")
 						span.btn-slim Стакан							
 					//======== single item =======
-					label.model-part.special-label
+					label.model-part.special-label.personal-logo
 						input(type="radio" name="model-part")
 						button.btn-slim Печать на стакане
 				
@@ -124,10 +132,18 @@ section.constructor.constructor-minimize.white-bg.mt-10
 							+model-color('#000000', '#f6e13c')
 							+model-color('#79cb37', '#79cb37')
 							+model-color('#ea2128', '#ea2128')
-				
-				//=========BUTTON ===========
-				.constructor-frame__button.mt-auto
-					a(href="#contacts").btn
-						span Заказать
-						svg.angle-right
-							use(href="./img/spriteSvg.svg#angle-right")
+
+	
+			//====== buttons block =======
+			.constructor-buttons.d-flex-y
+				button.btn(type="button" onclick="viewConsructorPrevStep()")
+					svg.angle-left
+						use(href="./img/spriteSvg.svg#angle-right")
+					span Выбрать модель
+					
+
+				a(href="#contacts").btn
+					span Заказать
+					svg.angle-right
+						use(href="./img/spriteSvg.svg#angle-right")
+
