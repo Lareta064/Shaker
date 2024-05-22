@@ -56,7 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	var reviewSwiper = new Swiper(".review-slider", {
 		slidesPerView: 1,
         spaceBetween: 20,
-		
+		autoplay:{
+			delay: 3000
+		},
 		loop: true,
 		speed: 1000,
 		// autoHeight: true,

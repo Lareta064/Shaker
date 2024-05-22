@@ -137,7 +137,6 @@
 
 		.btn-slim {
 			width: 100%;
-
 			pointer-events: none;
 		}
 
@@ -145,6 +144,7 @@
 			background-color: var(--darkBg);
 			color: white;
 		}
+		&:hover .btn-slim{background-color: var(--hoverColor);color: white;}
 	}
 
 	@media (max-width: 767px) {

@@ -94,6 +94,10 @@
 		column-gap:20px;
 		flex-grow: 2;
 	}
+	a{
+		transition: .3s;
+		&:hover{color: var(--hoverColor);}
+	}
 	@media (max-width:1023px) {
 		display: none;
 	}

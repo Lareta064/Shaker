@@ -1,6 +1,9 @@
 .blog{
 	
-	
+	@media(min-width:1200px){
+		.section-title{padding-bottom: 40px;}
+		
+	}
 	@media (max-width: 767px) {
 	h2{font-size: 35px; padding-left: 10px;}
 	}
@@ -93,9 +96,10 @@
 		align-items: flex-end;
 		flex-shrink: 0;
 		margin-top: auto;
-		padding-top: 40px;
+		padding-top: 41px;
 		@media (max-width: 767px) {
 		&> span{display: none;}
+			
 		}
 	}
 	@media (max-width: 359px) {max-width: 280px;}

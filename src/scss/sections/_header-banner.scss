@@ -114,6 +114,8 @@
 			color: white;
 			margin-top: 33px;
 			display: inline-block;
+			transition: .3s; 
+			&:hover{color: var(--hoverColor);}
 			@media (max-width: 767px) {
 			  margin-top: 10px;
 			}

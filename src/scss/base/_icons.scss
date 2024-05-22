@@ -19,6 +19,10 @@
 		width: 44px;
 		height: 16px;
 		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='44px' height='16px'%3e%3cpath fill-rule='evenodd' fill='rgb(255, 255, 255)' d='M35.993,15.078 L34.579,13.663 L39.243,9.000 L-0.000,9.000 L-0.000,7.000 L39.242,7.000 L34.579,2.336 L35.993,0.922 L43.071,8.000 L35.993,15.078 ZM40.000,8.243 L40.243,8.000 L40.000,7.757 L40.000,8.243 Z'/%3e%3c/svg%3e");
+		transition: .3s; 
+	}
+	&:hover:after{
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='44px' height='16px'%3e%3cpath fill-rule='evenodd' fill='rgb(40,153,248)' d='M35.993,15.078 L34.579,13.663 L39.243,9.000 L-0.000,9.000 L-0.000,7.000 L39.242,7.000 L34.579,2.336 L35.993,0.922 L43.071,8.000 L35.993,15.078 ZM40.000,8.243 L40.243,8.000 L40.000,7.757 L40.000,8.243 Z'/%3e%3c/svg%3e");
 	}
 
 }
