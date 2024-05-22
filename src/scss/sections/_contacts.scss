@@ -4,7 +4,7 @@
 	h2{
 		font-size: 25px;
 		line-height: 1.2;
-		font-family: var(--font);
+		
 		font-weight: 600;
 		margin-bottom: 23px;
 		@media (max-width: 767px) {
@@ -50,8 +50,7 @@
 }
 .manager-card{
 	column-gap:32px;
-	font-family: var(--font);
-	font-weight: 500;
+	
 	&__img{
 		width: 150px;
 		height: 150px;

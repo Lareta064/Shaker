@@ -49,13 +49,9 @@
 	}
 }
 
-// .constructor-form__display{
-// 	position: relative;
-// }
 .current-model-name {
 	display: none;
-	font-family: var(--font);
-	font-weight: 500;
+	
 
 	@media (max-width: 767px) {
 		display: block;

@@ -23,8 +23,8 @@
 		display: block;
 		padding-block: 7px 16px;
 		padding-right: 25px;
-		font-family: var(--font);
-		font-weight: 700;
+		
+		font-weight: bold;
 		width: 100%;
 		z-index: 5;
 	}
@@ -40,13 +40,13 @@
 		background-size: 12px 11px;
 		width: 20px;
 		height: 20px;
-		transition: .3s; 
+		 
 	}
 
 
 	.accordion-item.active:before {
-		width: 24px;
-		height: 24px;
+		width: 20px;
+		height: 20px;
 		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3e%3c!--!Font Awesome Free 6.5.2 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3e%3cpath fill='%23b1b1b1' d='M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z'/%3e%3c/svg%3e");
 		background-size: 18px 18px;
 		background-position: center;

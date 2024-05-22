@@ -172,7 +172,7 @@ select:-webkit-autofill:focus {
 /*========== TYPOGRAPHY ==========*/
 h1, h2{
   font-size: 40px;
-  font-family: var(--font);
+  
   font-weight: 600;
   @media (max-width: 1023px) {
     font-size: 34px;
@@ -184,7 +184,7 @@ h1, h2{
 .title-25{
   font-size: 25px;
   line-height: 1.2;
-  font-family: var(--font);
+  
   font-weight: 600;
   @media (max-width: 1023px) {
     font-size: 20px;
@@ -195,7 +195,7 @@ h1, h2{
 }
 .title-20{
   font-size: 20px;
-  font-family: var(--font);
+  
   font-weight: 500;
   @media (max-width: 1023px) {
       font-size: 18px;
@@ -207,11 +207,11 @@ h1, h2{
 }
 .title-15{
   font-size: 15px;
-  font-family: var(--font);
+  
     font-weight: 500;
 }
 .txt-bold{
-  font-family: var(--font);
+ font-weight: bold;
 }
 .txt-center{text-align: center;}
 .contact-link {

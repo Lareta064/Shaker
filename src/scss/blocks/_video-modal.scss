@@ -22,7 +22,8 @@
 		position: absolute;
 		right: 0;
 		top: 0;
-		color: white;font-family: var(--font);
+		color: white;
+		font-weight: 400;
 		transition: .3s; 
 		&:hover{
 			color: #999;

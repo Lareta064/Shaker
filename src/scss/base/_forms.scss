@@ -22,7 +22,7 @@
 		height: 32px;
 		font-size: 15px;
 		color: #000000;
-		font-family: var(--font);
+		
 		font-weight: 500;
 		&.error{
 			border-bottom: 1px solid red;
@@ -57,22 +57,22 @@
  }
  .inputfile+label {
  	font-size: 15px;
-	font-family: var(--font);
+	
 	font-weight: 500;
  }
 .form-item.form-item--custom{
 	padding-left: 15px;
 	border-bottom: 1px solid black;
 	min-height: 32px;
-	padding-bottom: 8px;
+	
 	display: flex;
 	align-items: center;
 	overflow: hidden;
 	margin-bottom: 50px;
 	.form-label{
 		display: flex;
-		gap: 57px;
-		align-items: flex-end;
+		gap: 59px;
+		align-items: center;
 		cursor: pointer;
 		@media (max-width: 767px) {
 		justify-content: space-between;
@@ -80,7 +80,7 @@
 	}
 	.icon-download{
 		position: relative;
-		top:5px;
+		top:1px;
 	}
 	@media (max-width: 767px) {
 	margin-bottom: 28px;
@@ -99,7 +99,7 @@
  }
  .form-notice{
 	gap: 12px;
-	font-family: var(--font);
+	
 	align-items: center;
 	font-weight: 500;
 	margin-bottom: 47px;

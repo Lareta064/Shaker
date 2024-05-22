@@ -35,7 +35,7 @@
 	line-height: 22px;
 	text-align: center;
 	font-size: 16px;
-	font-family: var(--font);
+	
 	font-weight: 500;
 	cursor:pointer;
 	&:hover{
@@ -71,11 +71,15 @@
 	}
 }
 .icon-download{
-	width: 24px;
-	height: 24px;
-	display: inline-block;
-	background-image: url(../img/form-icon.webp);
-	background-size: contain;
+	width: 22px;
+	height:14px;
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='6px' height='5px'%3e%3cpath fill-rule='evenodd' fill='rgb(0, 0, 0)' d='M3.000,5.005 L0.003,-0.001 L5.997,-0.001 L3.000,5.005 Z'/%3e%3c/svg%3e");
+	background-size: 6px 5px;
+	background-position: right ;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	
 }
 .notice-icon{
 	display: inline-block;

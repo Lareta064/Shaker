@@ -70,7 +70,7 @@
 }
 .product-price .price-box{
 	font-size: 40px;
-	font-family: var(--font);
+	font-weight: 600;
 	flex-shrink: 0;
 	@media (max-width: 1023px) {
 		font-size: 25px;
@@ -89,7 +89,7 @@
 	}
 	li{
 		font-size: 25px;
-		font-family: var(--font);
+		font-weight: 500;
 		&::marker{font-size: 30px;}
 		@media (max-width: 1023px) {
 			font-size: 18px;

@@ -262,7 +262,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		$(this).children().eq(1).slideToggle(300);  
 		
 		
-		$(this).find(".accordion-item").addClass("active");
+		$(this).find(".accordion-item").toggleClass("active");
 		$(this).siblings().find(".accordion-item").removeClass("active");
 
 		$(".accordion-wrap .accordion-text").not($(this).children().eq(1)).slideUp(300);
