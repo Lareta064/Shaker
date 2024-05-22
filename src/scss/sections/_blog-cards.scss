@@ -27,9 +27,17 @@
 	background-color: #fff;
 	display: flex;
 	flex-direction: column;
+	.title-25{transition: .3s; }
 	a:hover{
-		color: #b1b1b1;
+		color: white;
+		background-color: var(--hoverColor);
+		border-color: var(--hoverColor);
 	}
+	a.btn-arrow:hover, a.title-25:hover{
+		background-color: transparent;
+		color: var(--hoverColor);
+	}
+	
 	.btn{width: 200px;}
 	.btn svg{display: none;}
 	@media (max-width: 1023px){
@@ -40,6 +48,8 @@
 			padding-inline: 0;
 			svg{display: block;}
 			&:hover{
+				color: var(--hoverColor);
+				border: 0;
 				background: none;
 			}
 		}
