@@ -3,6 +3,11 @@
 	&__header{
 		justify-content: space-between;
 		margin-bottom: 24px;
+		h2{
+			font-size: 25px;
+			line-height: 1.2;
+			font-weight: 600;
+		}
 		@media (max-width: 767px) {
 		  margin-bottom: 10px;
 		  padding-left: 10px;

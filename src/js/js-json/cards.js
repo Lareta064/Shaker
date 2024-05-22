@@ -6,15 +6,21 @@ const blogposts = document.querySelector('#portfolio-cards');
 if (btn && blogposts) 
 {
 	const loadMore = addMorePosts()
-	btn.addEventListener('click', loadMore);
-	loadMore();
+	btn.addEventListener('click', () =>{blogposts.innerHTML = ''; loadMore()});
+	loadMore(true);
 }
 
-function getBlogPosts(limit, page) {
-	// Reversed
-	const reversed = data.slice().reverse();
+function getBlogPosts(limit, page, reverse) {
+	console.log(limit, page, reverse)
+	// If no limit or page return all data
+	if(limit === undefined || page === undefined) {
+		return reverse ? data.slice().reverse() : data.slice();
+	}
 
-	return reversed.slice(
+	// If there is a limit and page args
+	const list = reverse ? data.slice().reverse() : data.slice();
+
+	return list.slice(
 		Math.min(page * limit, data.length - 1),
 		Math.min((page + 1) * limit, data.length));
 }
@@ -47,9 +53,11 @@ function addMorePosts() {
 	const limit = 8;
 	let page = 0;
 	const lastPage = Math.ceil(data.length / limit);
-	return () => {
-		const newPosts = getBlogPosts(limit, page);
-
+	return (limited) => {
+		// const newPosts = getBlogPosts(limit, page);
+		console.log(limited);
+		const newPosts = limited ? getBlogPosts(limit, page) : getBlogPosts();
+		console.log(newPosts);
 		blogposts.innerHTML += createCardsHTML(newPosts);
 
 		page++;

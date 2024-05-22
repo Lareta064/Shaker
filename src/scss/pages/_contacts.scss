@@ -57,7 +57,10 @@
 		min-height: 485px;
 		padding: 24px;
 		padding-left: 30px;
-		.title-25 {
+		h2 {
+			font-size: 25px;
+			line-height: 1.2;
+			font-weight: 600;
 			margin-bottom: 25px;
 		}
 		@media (max-width: 1023px) {

@@ -3,13 +3,13 @@
 	display: flex;
 	align-items: center;
 	.container{
-		width: min(1090px, 100%);
-		@media (max-width: 1199px) {
-		padding-inline:0;
-		}
+		width: min(100%, 100%);
+		padding-left: 66px;
+		padding-right: 45px;
+		
 	}
-	@media (max-width: 767px) {
-	display: none;
+	@media (max-width: 1199px) {
+		display: none;
 	}
 	&-wrapper{
 		display: flex;
@@ -27,7 +27,7 @@
 		width: 192px;
 		padding: 10px;
 		font-size: 14px;
-		&>*+*{margin-top: 10px;}
+		&>*+*{margin-top: 12px;}
 		img{
 			width: 40px;
 			height: 40px;
