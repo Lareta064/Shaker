@@ -23,7 +23,7 @@
 	h2{
 		font-size: 20px;
 		margin-bottom: 14px;
-		font-family: var(--fontMedium);
+		font-family: var(--font);
 		font-weight: 500;
 	}
 	.btn{
@@ -62,7 +62,7 @@
 }
 .current-model-name {
 	position: absolute;
-	font-family: var(--fontMedium);
+	font-family: var(--font);
 	font-weight: 500;
 	top: 50%;
 	left: -30px;
