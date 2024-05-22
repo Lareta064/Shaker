@@ -256,6 +256,18 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}( document, window, 0 ));
 
+	/*====== page Contacts ========*/
+
+	$(".accordion-wrap").on("click", function(){   
+		$(this).children().eq(1).slideToggle(300);  
+		
+		
+		$(this).find(".accordion-item").addClass("active");
+		$(this).siblings().find(".accordion-item").removeClass("active");
+
+		$(".accordion-wrap .accordion-text").not($(this).children().eq(1)).slideUp(300);
+	});
+	
 	/*===== back Top button ===== */
 	const backTop = document.querySelector('.back-top');
 	if(backTop){

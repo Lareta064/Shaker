@@ -8,9 +8,9 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 15px;
-	h2{line-height: 1; margin-top: -12px;}
+	.accent-bg h2{line-height: 1; margin-top: -7px;}
 	@media (max-width: 767px) {
-		h2 {margin-top: 0;}
+		.accent-bg h2 {margin-top: 0;}
 				
 	gap: 10px;
 	}

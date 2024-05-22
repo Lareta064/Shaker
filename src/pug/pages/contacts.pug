@@ -43,52 +43,46 @@ block content
 					.contacts-row.contacts-row--info
 						.contacts-block.how-working
 							h2 Как мы работаем?
-							.acordion
-								//=========== single block =============
-								.acor-item
-									input#acor1(type='radio' name='acor' checked='checked')
-									label(for='acor1') 01) Заявка
-									.acor-body
-										p Отправьте заявку любым удобным способом — по номеру 8 800 770-74-19, email, Viber, WhatsApp, Telegram, на наши странички в VK и Instagram, через форму обратной связи и даже через конструктор шейкера. Кстати через конструктор вы можете сразу дать понять менеджеру шейкеры в каких цветах вам больше нравятся.
 
+							.acordion#how-work-accor
 								//=========== single block =============
-								.acor-item
-									input#acor2(type='radio' name='acor')
-									label(for='acor2') 02) Дизайн макетов
-									.acor-body
-										p Отправьте заявку любым удобным способом — по номеру 8 800 770-74-19, email, Viber, WhatsApp, Telegram, на наши странички в VK и Instagram, через форму обратной связи и даже через конструктор шейкера. Кстати через конструктор вы можете сразу дать понять менеджеру шейкеры в каких цветах вам больше нравятся.
+								.accordion-wrap
+									.accordion-item.active
+										p.accordion-header  01) Заявка
 
+									.accordion-text(style="display: block;")
+										p Отправьте заявку любым удобным способом — по номеру 8 800 770-74-19, email, Viber, WhatsApp, Telegram, на наши странички в VK и Instagram, через форму обратной связи и даже через конструктор шейкера. Кстати через конструктор вы можете сразу дать понять менеджеру шейкеры в каких цветах вам больше нравятся.
 								//=========== single block =============
-								.acor-item
-									input#acor3(type='radio' name='acor')
-									label(for='acor3') 03) Заключение договора и оплата
-									.acor-body
-										p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								
+								.accordion-wrap
+									.accordion-item
+										p.accordion-header  02) Дизайн макетов
+									.accordion-text
+										p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis itaque doloremque in sint facere enim ipsa doloribus, ab voluptates explicabo cupiditate omnis sapiente assumenda laboriosam illum alias praesentium iure vel.
 								//=========== single block =============
-								.acor-item
-									input#acor4(type='radio' name='acor')
-									label(for='acor4') 04) Производство
-									.acor-body
-										p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								
+								.accordion-wrap
+									.accordion-item
+										p.accordion-header 03) Заключение договора и оплата
+									.accordion-text
+										p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis itaque doloremque in sint facere enim ipsa doloribus, ab voluptates explicabo cupiditate omnis sapiente assumenda laboriosam illum alias praesentium iure vel.
 								//=========== single block =============
-								.acor-item
-									input#acor5(type='radio' name='acor')
-									label(for='acor5') 05) Отгрузка и доставка
-									.acor-body
-										p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									
+								.accordion-wrap
+									.accordion-item
+										p.accordion-header 04) Производство
+									.accordion-text
+										p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis itaque doloremque in sint facere enim ipsa doloribus, ab voluptates explicabo cupiditate omnis sapiente assumenda laboriosam illum alias praesentium iure vel.
+								//=========== single block =============
+								.accordion-wrap
+									.accordion-item
+										p.accordion-header 05) Отгрузка и доставка
+									.accordion-text
+										p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis itaque doloremque in sint facere enim ipsa doloribus, ab voluptates explicabo cupiditate omnis sapiente assumenda laboriosam illum alias praesentium iure vel
+						
 						.contacts-block.contacts-block--map
 							map.map
 								script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A63eb4a2915622d91de2ad7a02d86ccac3775bafed3de9bcb5f148c003b77dca4&amp;width=600&amp;height=600&amp;lang=ru_RU&amp;scroll=true")
 		
 	include ../sections/_contacts-inner.pug
 	include ../sections/_footer.pug
-
-
-
-
 	
 block variables
 	-var title = "Shaker";
