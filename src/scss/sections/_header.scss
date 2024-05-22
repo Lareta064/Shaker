@@ -22,10 +22,40 @@
 	}
 	&-models{
 		flex-shrink:0;
-		padding-inline:20px;
+		padding-inline:24px;
+		position: relative;
+		a:hover{color: var(--hoverColor);}
+		.drop-list{
+			
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 100%;
+			z-index: 3;
+			height: 0;
+			overflow: hidden;
+			background-color: rgb(25, 25, 25);
+			transition: height .3s;
+			
+			&__menu{padding: 16px 20px;}
+			a{
+				font-weight: 400; 
+				color:#fffefe; 
+				transition: .3s; 
+			    display: block; 
+				white-space: nowrap;
+			}
+			a:hover {
+				color: var(--hoverColor);
+			}
+			a+a{margin-top: 31px;}
+		}
 
 		a{
 			column-gap: 30px;
+		}
+		&:hover .drop-list{
+			height: 200px;
 		}
 		@media (max-width:1023px){display: none;}
 	}
