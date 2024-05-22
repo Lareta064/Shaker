@@ -66,7 +66,12 @@
 	.mb-18{margin-bottom: 18px;}
 	.swiper{
 		padding-bottom: 27px;
-		.swiper-pagination{bottom: 0; font-weight: 700; padding-left: 10px;}
+		.swiper-pagination{bottom: 0; font-weight: 700; 
+			@media (max-width: 767px) {
+			padding-left: 10px;
+			}
+			
+		}
 		.swiper-slide{
 			width: 100%;
 			max-height: 370px;

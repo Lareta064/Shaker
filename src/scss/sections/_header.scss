@@ -4,6 +4,9 @@
 	align-items: center;
 	background-color: var(--darkBg);
 	color:var(--lightText);
+	.container{
+		width: min(1070px, 100%);
+	}
 	&-content{
 		
 		height: 78px;
