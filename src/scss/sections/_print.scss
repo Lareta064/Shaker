@@ -3,12 +3,12 @@
 	overflow: hidden;
 	position: relative;
 	border-radius: 10px;
-	
+	background-color: #000000;
 	justify-content: flex-end;
 	padding: 25px 30px;
 	@media (max-width: 576px) {
 		padding: 10px;
-		padding-top: 180px;
+		padding-top: 160px;
 		flex-direction: column;
 	}
 	&:after{
@@ -31,7 +31,8 @@
 			transform: scale(1.5);
 			object-position: -129px 12px;
 			@media (max-width: 767px) {
-			  object-position: 0;
+			  object-position: 0 -52px;
+			  transform: scale(1.05);
 			  
 			}
 		}
@@ -56,6 +57,9 @@
 	@media (max-width: 576px) {
 		padding: 20px;
 		width: 100%;
-		.btn{width: 100%;}
+		.btn{
+			width: calc(100% + 20px);
+			margin-inline: -10px;
+		}
 	}
 }

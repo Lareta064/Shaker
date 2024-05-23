@@ -1,8 +1,10 @@
 .inner-page.inner-page--blog{
 	@media (max-width: 767px) {
 	padding-top: 16px;
+	padding-bottom: 44px;
 	h1{padding-bottom: 19px;}
 	}
+
 }
 .blog-articles{
 	display: grid;
@@ -28,5 +30,12 @@
 	@media (max-width: 599px) {
 		grid-template-columns: 1fr;
 		.blog-card{margin: 0 auto;}
+	}
+	@media (max-width: 359px) {
+		
+
+		.blog-card {
+			max-width: 300px;
+		}
 	}
 }

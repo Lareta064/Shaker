@@ -61,6 +61,7 @@
 	box-shadow: 0 0 8px rgba(0,0,0, .2);
 	color: #000;
 	transition: .3s;
+	z-index: 3;
 	&.active{transform: scale(1);}
 	&:hover{
 		background-color: #000;
